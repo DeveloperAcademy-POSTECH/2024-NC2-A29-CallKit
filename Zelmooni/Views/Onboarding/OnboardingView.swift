@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-struct MainView: View {
+struct OnboardingView: View {
     @State private var selectedMode: Int?
     @State private var scrollOffset: CGFloat = 0
     
@@ -46,7 +46,17 @@ struct MainView: View {
                     .padding(.bottom, 78)
             } else {
                 Button {
+                    let ud = UserDefaults.standard
                     
+                    // 처음 본 여부 저장
+                    ud.setValue(true, forKey: UserDefaults.onboard)
+                    
+                    // 선택된 보이스 저장
+                    guard let mode = self.selectedMode else {
+                        print("목소리 선택이 되어있지 않습니다!")
+                        return
+                    }
+                    ud.setValue(mode, forKey: UserDefaults.selectedVoice)
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 15)
@@ -66,7 +76,7 @@ struct MainView: View {
     }
     
     
-    var pageControl: some View {
+    private var pageControl: some View {
         HStack {
             Circle()
                 .frame(width: 10)
@@ -97,5 +107,5 @@ struct MainView: View {
 
 
 #Preview {
-    MainView()
+    OnboardingView()
 }

@@ -23,7 +23,7 @@
 		2CAB7E6D2C2001A70079C8FE /* NeoEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E642C2001A70079C8FE /* NeoEB.ttf */; };
 		2CAB7E6E2C2001A70079C8FE /* NeoL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E652C2001A70079C8FE /* NeoL.ttf */; };
 		2CAB7E6F2C2001A70079C8FE /* NeoH.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E662C2001A70079C8FE /* NeoH.ttf */; };
-		2CAB7E722C2007410079C8FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E712C2007410079C8FE /* MainView.swift */; };
+		2CAB7E722C2007410079C8FE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E712C2007410079C8FE /* OnboardingView.swift */; };
 		2CAB7E752C2011280079C8FE /* OnboardingFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E742C2011280079C8FE /* OnboardingFirstView.swift */; };
 		2CAB7E782C20115B0079C8FE /* FontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E772C20115B0079C8FE /* FontName.swift */; };
 		2CAB7E7A2C2011840079C8FE /* TextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E792C2011840079C8FE /* TextViewModifier.swift */; };
@@ -31,6 +31,7 @@
 		2CAB7E7E2C2011DB0079C8FE /* OnboardingSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E7D2C2011DB0079C8FE /* OnboardingSecondView.swift */; };
 		2CAB7E802C20135C0079C8FE /* OnboardingThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E7F2C20135C0079C8FE /* OnboardingThirdView.swift */; };
 		2CAB7E822C202C0C0079C8FE /* ScrollOffsetPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E812C202C0C0079C8FE /* ScrollOffsetPreferenceKey.swift */; };
+		2CAB7E842C2043750079C8FE /* UserDefaults + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E832C2043750079C8FE /* UserDefaults + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +54,7 @@
 		2CAB7E642C2001A70079C8FE /* NeoEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoEB.ttf; sourceTree = "<group>"; };
 		2CAB7E652C2001A70079C8FE /* NeoL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoL.ttf; sourceTree = "<group>"; };
 		2CAB7E662C2001A70079C8FE /* NeoH.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoH.ttf; sourceTree = "<group>"; };
-		2CAB7E712C2007410079C8FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2CAB7E712C2007410079C8FE /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		2CAB7E742C2011280079C8FE /* OnboardingFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirstView.swift; sourceTree = "<group>"; };
 		2CAB7E772C20115B0079C8FE /* FontName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontName.swift; sourceTree = "<group>"; };
 		2CAB7E792C2011840079C8FE /* TextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewModifier.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		2CAB7E7D2C2011DB0079C8FE /* OnboardingSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSecondView.swift; sourceTree = "<group>"; };
 		2CAB7E7F2C20135C0079C8FE /* OnboardingThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThirdView.swift; sourceTree = "<group>"; };
 		2CAB7E812C202C0C0079C8FE /* ScrollOffsetPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollOffsetPreferenceKey.swift; sourceTree = "<group>"; };
+		2CAB7E832C2043750079C8FE /* UserDefaults + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				2CAB7E732C2011150079C8FE /* Onboarding */,
-				2CAB7E712C2007410079C8FE /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +154,7 @@
 		2CAB7E732C2011150079C8FE /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				2CAB7E712C2007410079C8FE /* OnboardingView.swift */,
 				2CAB7E742C2011280079C8FE /* OnboardingFirstView.swift */,
 				2CAB7E7D2C2011DB0079C8FE /* OnboardingSecondView.swift */,
 				2CAB7E7F2C20135C0079C8FE /* OnboardingThirdView.swift */,
@@ -167,6 +169,7 @@
 				2CAB7E792C2011840079C8FE /* TextViewModifier.swift */,
 				2CAB7E7B2C2011A00079C8FE /* View + Extension.swift */,
 				2CAB7E812C202C0C0079C8FE /* ScrollOffsetPreferenceKey.swift */,
+				2CAB7E832C2043750079C8FE /* UserDefaults + Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -256,7 +259,8 @@
 				2C270BDE2C1D7EB100B6916B /* TestViewController.swift in Sources */,
 				2C270BE22C1D88B000B6916B /* PushCallViewController.swift in Sources */,
 				2CAB7E822C202C0C0079C8FE /* ScrollOffsetPreferenceKey.swift in Sources */,
-				2CAB7E722C2007410079C8FE /* MainView.swift in Sources */,
+				2CAB7E842C2043750079C8FE /* UserDefaults + Extension.swift in Sources */,
+				2CAB7E722C2007410079C8FE /* OnboardingView.swift in Sources */,
 				2CAB7E7E2C2011DB0079C8FE /* OnboardingSecondView.swift in Sources */,
 				2CAB7E782C20115B0079C8FE /* FontName.swift in Sources */,
 				2CAB7E752C2011280079C8FE /* OnboardingFirstView.swift in Sources */,
