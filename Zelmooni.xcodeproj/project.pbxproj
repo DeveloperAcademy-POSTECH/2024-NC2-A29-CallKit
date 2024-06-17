@@ -14,6 +14,23 @@
 		2C270BDE2C1D7EB100B6916B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C270BDD2C1D7EB100B6916B /* TestViewController.swift */; };
 		2C270BE22C1D88B000B6916B /* PushCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C270BE12C1D88B000B6916B /* PushCallViewController.swift */; };
 		2C270BE92C1F1BDF00B6916B /* pohang.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C270BE82C1F1BDF00B6916B /* pohang.m4a */; };
+		2CAB7E672C2001A70079C8FE /* NeoM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E5E2C2001A70079C8FE /* NeoM.ttf */; };
+		2CAB7E682C2001A70079C8FE /* NeoSB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E5F2C2001A70079C8FE /* NeoSB.ttf */; };
+		2CAB7E692C2001A70079C8FE /* NeoR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E602C2001A70079C8FE /* NeoR.ttf */; };
+		2CAB7E6A2C2001A70079C8FE /* NeoUL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E612C2001A70079C8FE /* NeoUL.ttf */; };
+		2CAB7E6B2C2001A70079C8FE /* NeoT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E622C2001A70079C8FE /* NeoT.ttf */; };
+		2CAB7E6C2C2001A70079C8FE /* NeoB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E632C2001A70079C8FE /* NeoB.ttf */; };
+		2CAB7E6D2C2001A70079C8FE /* NeoEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E642C2001A70079C8FE /* NeoEB.ttf */; };
+		2CAB7E6E2C2001A70079C8FE /* NeoL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E652C2001A70079C8FE /* NeoL.ttf */; };
+		2CAB7E6F2C2001A70079C8FE /* NeoH.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E662C2001A70079C8FE /* NeoH.ttf */; };
+		2CAB7E722C2007410079C8FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E712C2007410079C8FE /* MainView.swift */; };
+		2CAB7E752C2011280079C8FE /* OnboardingFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E742C2011280079C8FE /* OnboardingFirstView.swift */; };
+		2CAB7E782C20115B0079C8FE /* FontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E772C20115B0079C8FE /* FontName.swift */; };
+		2CAB7E7A2C2011840079C8FE /* TextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E792C2011840079C8FE /* TextViewModifier.swift */; };
+		2CAB7E7C2C2011A00079C8FE /* View + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E7B2C2011A00079C8FE /* View + Extension.swift */; };
+		2CAB7E7E2C2011DB0079C8FE /* OnboardingSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E7D2C2011DB0079C8FE /* OnboardingSecondView.swift */; };
+		2CAB7E802C20135C0079C8FE /* OnboardingThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E7F2C20135C0079C8FE /* OnboardingThirdView.swift */; };
+		2CAB7E822C202C0C0079C8FE /* ScrollOffsetPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E812C202C0C0079C8FE /* ScrollOffsetPreferenceKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +44,23 @@
 		2C270BE02C1D888900B6916B /* Zelmooni.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zelmooni.entitlements; sourceTree = "<group>"; };
 		2C270BE12C1D88B000B6916B /* PushCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushCallViewController.swift; sourceTree = "<group>"; };
 		2C270BE82C1F1BDF00B6916B /* pohang.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pohang.m4a; sourceTree = "<group>"; };
+		2CAB7E5E2C2001A70079C8FE /* NeoM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoM.ttf; sourceTree = "<group>"; };
+		2CAB7E5F2C2001A70079C8FE /* NeoSB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoSB.ttf; sourceTree = "<group>"; };
+		2CAB7E602C2001A70079C8FE /* NeoR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoR.ttf; sourceTree = "<group>"; };
+		2CAB7E612C2001A70079C8FE /* NeoUL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoUL.ttf; sourceTree = "<group>"; };
+		2CAB7E622C2001A70079C8FE /* NeoT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoT.ttf; sourceTree = "<group>"; };
+		2CAB7E632C2001A70079C8FE /* NeoB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoB.ttf; sourceTree = "<group>"; };
+		2CAB7E642C2001A70079C8FE /* NeoEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoEB.ttf; sourceTree = "<group>"; };
+		2CAB7E652C2001A70079C8FE /* NeoL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoL.ttf; sourceTree = "<group>"; };
+		2CAB7E662C2001A70079C8FE /* NeoH.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoH.ttf; sourceTree = "<group>"; };
+		2CAB7E712C2007410079C8FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2CAB7E742C2011280079C8FE /* OnboardingFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirstView.swift; sourceTree = "<group>"; };
+		2CAB7E772C20115B0079C8FE /* FontName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontName.swift; sourceTree = "<group>"; };
+		2CAB7E792C2011840079C8FE /* TextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewModifier.swift; sourceTree = "<group>"; };
+		2CAB7E7B2C2011A00079C8FE /* View + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extension.swift"; sourceTree = "<group>"; };
+		2CAB7E7D2C2011DB0079C8FE /* OnboardingSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSecondView.swift; sourceTree = "<group>"; };
+		2CAB7E7F2C20135C0079C8FE /* OnboardingThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThirdView.swift; sourceTree = "<group>"; };
+		2CAB7E812C202C0C0079C8FE /* ScrollOffsetPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollOffsetPreferenceKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +93,15 @@
 		2C270BCE2C1D7E4600B6916B /* Zelmooni */ = {
 			isa = PBXGroup;
 			children = (
+				2CAB7E762C20114E0079C8FE /* Helpers */,
+				2CAB7E702C2006A30079C8FE /* Views */,
 				2CAB7E5C2C1FEC4B0079C8FE /* Tests */,
 				2C270BE02C1D888900B6916B /* Zelmooni.entitlements */,
 				2C270BDF2C1D812A00B6916B /* Info.plist */,
 				2C270BCF2C1D7E4600B6916B /* ZelmooniApp.swift */,
 				2C270BD12C1D7E4600B6916B /* ContentView.swift */,
 				2C270BD32C1D7E4700B6916B /* Assets.xcassets */,
+				2CAB7E5D2C20019A0079C8FE /* Resources */,
 				2C270BD52C1D7E4700B6916B /* Preview Content */,
 			);
 			path = Zelmooni;
@@ -86,6 +123,52 @@
 				2C270BE82C1F1BDF00B6916B /* pohang.m4a */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		2CAB7E5D2C20019A0079C8FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CAB7E632C2001A70079C8FE /* NeoB.ttf */,
+				2CAB7E642C2001A70079C8FE /* NeoEB.ttf */,
+				2CAB7E662C2001A70079C8FE /* NeoH.ttf */,
+				2CAB7E652C2001A70079C8FE /* NeoL.ttf */,
+				2CAB7E5E2C2001A70079C8FE /* NeoM.ttf */,
+				2CAB7E602C2001A70079C8FE /* NeoR.ttf */,
+				2CAB7E5F2C2001A70079C8FE /* NeoSB.ttf */,
+				2CAB7E622C2001A70079C8FE /* NeoT.ttf */,
+				2CAB7E612C2001A70079C8FE /* NeoUL.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2CAB7E702C2006A30079C8FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CAB7E732C2011150079C8FE /* Onboarding */,
+				2CAB7E712C2007410079C8FE /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CAB7E732C2011150079C8FE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2CAB7E742C2011280079C8FE /* OnboardingFirstView.swift */,
+				2CAB7E7D2C2011DB0079C8FE /* OnboardingSecondView.swift */,
+				2CAB7E7F2C20135C0079C8FE /* OnboardingThirdView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		2CAB7E762C20114E0079C8FE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2CAB7E772C20115B0079C8FE /* FontName.swift */,
+				2CAB7E792C2011840079C8FE /* TextViewModifier.swift */,
+				2CAB7E7B2C2011A00079C8FE /* View + Extension.swift */,
+				2CAB7E812C202C0C0079C8FE /* ScrollOffsetPreferenceKey.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +229,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAB7E682C2001A70079C8FE /* NeoSB.ttf in Resources */,
+				2CAB7E6E2C2001A70079C8FE /* NeoL.ttf in Resources */,
+				2CAB7E6F2C2001A70079C8FE /* NeoH.ttf in Resources */,
 				2C270BD72C1D7E4700B6916B /* Preview Assets.xcassets in Resources */,
+				2CAB7E692C2001A70079C8FE /* NeoR.ttf in Resources */,
 				2C270BD42C1D7E4700B6916B /* Assets.xcassets in Resources */,
 				2C270BE92C1F1BDF00B6916B /* pohang.m4a in Resources */,
+				2CAB7E6C2C2001A70079C8FE /* NeoB.ttf in Resources */,
+				2CAB7E672C2001A70079C8FE /* NeoM.ttf in Resources */,
+				2CAB7E6B2C2001A70079C8FE /* NeoT.ttf in Resources */,
+				2CAB7E6D2C2001A70079C8FE /* NeoEB.ttf in Resources */,
+				2CAB7E6A2C2001A70079C8FE /* NeoUL.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,9 +251,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAB7E7A2C2011840079C8FE /* TextViewModifier.swift in Sources */,
 				2C270BD22C1D7E4600B6916B /* ContentView.swift in Sources */,
 				2C270BDE2C1D7EB100B6916B /* TestViewController.swift in Sources */,
 				2C270BE22C1D88B000B6916B /* PushCallViewController.swift in Sources */,
+				2CAB7E822C202C0C0079C8FE /* ScrollOffsetPreferenceKey.swift in Sources */,
+				2CAB7E722C2007410079C8FE /* MainView.swift in Sources */,
+				2CAB7E7E2C2011DB0079C8FE /* OnboardingSecondView.swift in Sources */,
+				2CAB7E782C20115B0079C8FE /* FontName.swift in Sources */,
+				2CAB7E752C2011280079C8FE /* OnboardingFirstView.swift in Sources */,
+				2CAB7E802C20135C0079C8FE /* OnboardingThirdView.swift in Sources */,
+				2CAB7E7C2C2011A00079C8FE /* View + Extension.swift in Sources */,
 				2C270BD02C1D7E4600B6916B /* ZelmooniApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
