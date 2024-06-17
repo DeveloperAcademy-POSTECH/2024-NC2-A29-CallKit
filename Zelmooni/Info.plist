@@ -7,5 +7,17 @@
 		<string>remote-notification</string>
 		<string>voip</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NeoB.ttf</string>
+		<string>NeoEB.ttf</string>
+		<string>NeoH.ttf</string>
+		<string>NeoL.ttf</string>
+		<string>NeoM.ttf</string>
+		<string>NeoR.ttf</string>
+		<string>NeoSB.ttf</string>
+		<string>NeoT.ttf</string>
+		<string>NeoUL.ttf</string>
+	</array>
 </dict>
 </plist>
