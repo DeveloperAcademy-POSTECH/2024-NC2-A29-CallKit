@@ -18,9 +18,46 @@ struct OnboardingFirstView: View {
                 .toTitle()
             
             Spacer()
-            // TODO: 사진추가!
-            EmptyView()
+            
+            VStack(spacing: 0) {
+                Image(.mooni)
+                    .resizable()
+                    .frame(width: 163, height: 174)
+                HStack {
+                    Image(.ezel)
+                        .resizable()
+                        .frame(width: 114, height: 131)
+                        .offset(y: -15)
+                    Image(.gyuni)
+                        .resizable()
+                        .frame(width: 170, height: 190)
+                }
+                .padding(.leading, 40)
+            }
+            
+            Spacer()
+            
+            NavigationLink {
+                OnboardingSecondView()
+            } label: {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundStyle(.main)
+                        .frame(height: 44)
+                        .padding(.horizontal, 17)
+                    
+                    Text("다음")
+                        .font(.custom(FontName.neoB, size: 20))
+                        .tint(.white)
+                }
+            }
+            .padding(.bottom, 83)
         }
         .padding(.top, 71)
     }
+}
+
+
+#Preview {
+    OnboardingFirstView()
 }

@@ -1,5 +1,5 @@
 //
-//  OnboardingThirdView.swift
+//  ModifyVoiceView.swift
 //  Zelmooni
 //
 //  Created by 문인범 on 6/17/24.
@@ -7,15 +7,17 @@
 
 import SwiftUI
 
-struct OnboardingThirdView: View {
-    @State var selectedMode: Int?
+struct ModifyVoiceView: View {
+    @Environment(\.dismiss) private var dismiss
+    @State private var selectedMode: Int?
+    @State private var savedMode: Int?
     
     var body: some View {
         VStack(alignment: .leading) {
             Text("목소리를 설정할 수 있어요!")
                 .font(.custom(FontName.neoEB, size: 30))
                 .foregroundStyle(.main)
-                .padding(.top, 40)
+                .padding(.top, 35)
                 .padding(.bottom, 10)
             
             Text("선택한 목소리로 모닝콜을 해드립니다.\n나중에 바꿀 수 있어요!")
@@ -43,37 +45,38 @@ struct OnboardingThirdView: View {
             
             Spacer()
             
-            NavigationLink {
-                OnboardingFourthView()
-                    .navigationBarBackButtonHidden()
-                    .onAppear {
-                        let ud = UserDefaults.standard
-                        
-                        // 처음 본 여부 저장
-                        ud.setValue(true, forKey: UserDefaults.onboard)
-                        
-                        // 선택된 보이스 저장
-                        guard let mode = self.selectedMode else {
-                            print("목소리 선택이 되어있지 않습니다!")
-                            return
-                        }
-                        ud.setValue(mode, forKey: UserDefaults.selectedVoice)
-                    }
+            Button {
+                UserDefaults.standard.setValue(selectedMode!, forKey: UserDefaults.selectedVoice)
+                
+                print(UserDefaults.standard.integer(forKey: UserDefaults.selectedVoice))
+                dismiss()
             } label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
+                        .frame(height: 47)
                         .tint(.main)
-                        .frame(height: 44)
                     
-                    Text("등록")
+                    Text("변경")
                         .font(.custom(FontName.neoB, size: 20))
                         .tint(.white)
                 }
             }
-            .disabled( self.selectedMode == nil )
-            .padding(.bottom, 83)
+            .disabled(self.selectedMode == savedMode)
+            
+            Spacer()
         }
+//        .animation(.easeInOut(duration: 0.3), value: selectedMode)
         .padding(.horizontal, 17)
+        .onAppear {
+            self.savedMode = UserDefaults.standard.integer(forKey: UserDefaults.selectedVoice)
+            self.selectedMode = self.savedMode
+        }
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                backButton
+            }
+        }
     }
     
     
@@ -155,8 +158,20 @@ struct OnboardingThirdView: View {
         }
     }
     
+    var backButton: some View {
+        Button {
+            dismiss()
+        } label: {
+            HStack(spacing: 0) {
+                Image(systemName: "chevron.left")
+                Text("뒤로")
+                    .fontWeight(.semibold)
+            }
+        }
+        .tint(.main)
+    }
 }
 
 #Preview {
-    OnboardingThirdView()
+    ModifyVoiceView()
 }

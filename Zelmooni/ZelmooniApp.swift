@@ -9,14 +9,15 @@ import SwiftUI
 
 @main
 struct ZelmooniApp: App {
-    let isReadOnboardingView: Bool = UserDefaults.standard.bool(forKey: UserDefaults.onboard)
+//    @State private var isReadOnboardingView: Bool = UserDefaults.standard.bool(forKey: UserDefaults.onboard)
+    @State private var isReadOnboardingView: Bool = false
     
     var body: some Scene {
         WindowGroup {
             if !isReadOnboardingView {
                 OnboardingView()
             } else {
-                
+                MainView()
             }
         }
     }
