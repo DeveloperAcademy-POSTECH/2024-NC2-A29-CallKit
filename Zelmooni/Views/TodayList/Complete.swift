@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Complete: View {
+
+    
     var body: some View {
         VStack(alignment: .center) {
             Image("check")
