@@ -79,33 +79,3 @@ struct PushCallView: UIViewControllerRepresentable {
     }
 }
 
-class AudioController {
-    var audio: AVAudioPlayer?
-    
-    func startAudio() {
-        do {
-            let url = Bundle.main.url(forResource: "pohang", withExtension: "m4a")
-
-//            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, options: .duckOthers)
-//            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default)
-//            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setCategory(.playback, options: .mixWithOthers)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-//            try AVAudioSession.sharedInstance().overrideOutputAudioPort(.speaker)
-
-            self.audio = try AVAudioPlayer(contentsOf: url!)
-            audio?.numberOfLoops = -1
-            
-//            self.audio!.prepareToPlay()
-            self.audio!.play()
-            print("started!")
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
-    
-    func stopAudio() {
-        self.audio?.stop()
-    }
-}
