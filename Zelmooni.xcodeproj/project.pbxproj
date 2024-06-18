@@ -37,6 +37,9 @@
 		2CAB7E942C2073450079C8FE /* OnboardingFourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E932C2073450079C8FE /* OnboardingFourthView.swift */; };
 		2CAB7E972C210CF50079C8FE /* CallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E962C210CF50079C8FE /* CallViewModel.swift */; };
 		2CAB7E9A2C2110BC0079C8FE /* CallMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7E992C2110BC0079C8FE /* CallMainView.swift */; };
+		45E9F8DC2C21428100FA999D /* Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9F8DB2C21428100FA999D /* Complete.swift */; };
+		45E9F8E02C21681D00FA999D /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9F8DF2C21681D00FA999D /* Sticker.swift */; };
+		45E9F8E22C21973600FA999D /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E9F8E12C21973600FA999D /* FinalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,9 @@
 		2CAB7E932C2073450079C8FE /* OnboardingFourthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFourthView.swift; sourceTree = "<group>"; };
 		2CAB7E962C210CF50079C8FE /* CallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewModel.swift; sourceTree = "<group>"; };
 		2CAB7E992C2110BC0079C8FE /* CallMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallMainView.swift; sourceTree = "<group>"; };
+		45E9F8DB2C21428100FA999D /* Complete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complete.swift; sourceTree = "<group>"; };
+		45E9F8DF2C21681D00FA999D /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		45E9F8E12C21973600FA999D /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 		2CAB7E702C2006A30079C8FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				45E9F8DA2C21424F00FA999D /* TodayList */,
 				2CAB7E982C2110480079C8FE /* Call */,
 				2CAB7E732C2011150079C8FE /* Onboarding */,
 				2CAB7E872C2046530079C8FE /* MainView.swift */,
@@ -211,6 +218,16 @@
 				2CAB7E992C2110BC0079C8FE /* CallMainView.swift */,
 			);
 			path = Call;
+			sourceTree = "<group>";
+		};
+		45E9F8DA2C21424F00FA999D /* TodayList */ = {
+			isa = PBXGroup;
+			children = (
+				45E9F8E12C21973600FA999D /* FinalView.swift */,
+				45E9F8DB2C21428100FA999D /* Complete.swift */,
+				45E9F8DF2C21681D00FA999D /* Sticker.swift */,
+			);
+			path = TodayList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,11 +315,14 @@
 				2C270BD22C1D7E4600B6916B /* ContentView.swift in Sources */,
 				2C270BDE2C1D7EB100B6916B /* TestViewController.swift in Sources */,
 				2C270BE22C1D88B000B6916B /* PushCallViewController.swift in Sources */,
+				45E9F8E02C21681D00FA999D /* Sticker.swift in Sources */,
 				2CAB7E822C202C0C0079C8FE /* ScrollOffsetPreferenceKey.swift in Sources */,
+				45E9F8DC2C21428100FA999D /* Complete.swift in Sources */,
 				2CAB7E842C2043750079C8FE /* UserDefaults + Extension.swift in Sources */,
 				2CAB7E722C2007410079C8FE /* OnboardingView.swift in Sources */,
 				2CAB7E7E2C2011DB0079C8FE /* OnboardingSecondView.swift in Sources */,
 				2CAB7E9A2C2110BC0079C8FE /* CallMainView.swift in Sources */,
+				45E9F8E22C21973600FA999D /* FinalView.swift in Sources */,
 				2CAB7E8A2C204C870079C8FE /* ModifyVoiceView.swift in Sources */,
 				2CAB7E782C20115B0079C8FE /* FontName.swift in Sources */,
 				2CAB7E942C2073450079C8FE /* OnboardingFourthView.swift in Sources */,
