@@ -42,6 +42,7 @@ struct MainView: View {
                 }
 
                 Button {
+                    viewModel.isTest = true
                     viewModel.getTestCall()
                 } label: {
                     ZStack {
@@ -87,7 +88,7 @@ struct MainView: View {
             }
         }
         .fullScreenCover(isPresented: $viewModel.isCallComing) {
-            CallMainView()
+            CallMainView(isTest: viewModel.isTest)
         }
 //        .onAppear {
 //            viewModel.isCallComing = true

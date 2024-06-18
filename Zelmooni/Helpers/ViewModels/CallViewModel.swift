@@ -14,14 +14,13 @@ import PushKit
 class CallViewModel: NSObject {
     static let shared = CallViewModel()
     
-    let callController = CXCallController()
-    var id: UUID?
+    public var isCallComing: Bool = false
+    public var isTest: Bool = false
     
-    var isCallComing: Bool = false
+    private let callController = CXCallController()
+    private var id: UUID?
     
-    var audio: AudioController = .init()
-    
-    var status: CallStatus = .acceptCall
+    private var audio: AudioController = .init()
     
     var selectedVoice: String {
         switch UserDefaults.standard.integer(forKey: UserDefaults.selectedVoice) {
@@ -54,15 +53,17 @@ extension CallViewModel: PKPushRegistryDelegate, CXProviderDelegate {
     }
     
     func provider(_ provider: CXProvider, perform action: CXAnswerCallAction) {
-        action.fulfill()
         isCallComing = true
-        self.audio.startAudio()
+        self.audio.startTestAudio()
+        action.fulfill()
     }
     
     func provider(_ provider: CXProvider, perform action: CXEndCallAction) {
-        action.fulfill()
         isCallComing = false
+        self.isTest = false
         self.audio.stopAudio()
+        action.fulfill()
+
     }
     
     func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingPushWith payload: PKPushPayload, for type: PKPushType, completion: @escaping () -> Void) {
@@ -101,7 +102,7 @@ extension CallViewModel {
         update.remoteHandle = CXHandle(type: .generic, value: selectedVoice)
         update.hasVideo = false
         self.id = UUID()
-        
+                
         provider.reportNewIncomingCall(with: self.id!, update: update) { error in
             if let error = error {
                 fatalError(error.localizedDescription)
@@ -125,6 +126,7 @@ extension CallViewModel {
 extension CallViewModel {
     public func playNextVoice() {
         self.audio.startSecondAudio()
+//        self.audio.startSecondTestAudio()
     }
 }
 

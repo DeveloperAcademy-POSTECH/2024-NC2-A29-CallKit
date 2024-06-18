@@ -34,7 +34,7 @@ extension PushCallViewController: CXProviderDelegate, PKPushRegistryDelegate {
     func provider(_ provider: CXProvider, perform action: CXAnswerCallAction) {
         action.fulfill()
         
-        self.audio.startAudio()
+        self.audio.startTestAudio()
     }
     
     func provider(_ provider: CXProvider, perform action: CXEndCallAction) {

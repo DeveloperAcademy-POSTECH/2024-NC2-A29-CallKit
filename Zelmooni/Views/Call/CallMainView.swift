@@ -13,6 +13,8 @@ struct CallMainView: View {
     @State private var isIncorrect: Bool = false
     @State private var animationOffset: CGFloat = 0
     
+    let isTest: Bool
+    
     let randomPhrase: String = [
         "새로운 자기를 만들지 않은 날들은 모두 잃어버린 것으로 간주하라.",
         "오늘 아침 일어날 수 있으니 이 얼마나 행운인가",
@@ -63,7 +65,6 @@ struct CallMainView: View {
             HStack {
                 Button {
                     if evaluateInputText() {
-                        viewModel.status = .complete
                         viewModel.playNextVoice()
                     }
                 } label: {
@@ -78,15 +79,17 @@ struct CallMainView: View {
                 }
                 .frame(height: 47)
                 
-                Button {
-                    viewModel.endTestCall()
-                } label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 15)
-                            .foregroundStyle(.red)
+                if viewModel.isTest {
+                    Button {
+                        viewModel.endTestCall()
+                    } label: {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 15)
+                                .foregroundStyle(.red)
+                        }
                     }
+                    .frame(height: 47)
                 }
-                .frame(height: 47)
             }
         }
         .padding(.horizontal, 16)
@@ -109,5 +112,5 @@ struct CallMainView: View {
 }
 
 #Preview {
-    CallMainView()
+    CallMainView(isTest: true)
 }
