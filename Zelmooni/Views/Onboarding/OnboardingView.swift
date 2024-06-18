@@ -15,6 +15,7 @@ struct OnboardingView: View {
             NavigationStack {
                 OnboardingFirstView()
             }
+            .tint(.main)
         }
     }
 }

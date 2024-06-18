@@ -8,23 +8,38 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var viewModel = CallViewModel.shared
+    
     var body: some View {
         NavigationStack {
             VStack {
                 // TODO: 텍스트 수정 예정
-                Text("😼")
-                    .font(.system(size: 64))
-                    .padding(.bottom, 20)
                 
-                VStack {
-                    Text("재촉하지 마소")
-                        .font(.system(size: 25, weight: .semibold))
-                        .foregroundStyle(.main)
-                    Text("내일 잘 찾아가겠소")
-                        .font(.system(size: 25, weight: .semibold))
-                        .foregroundStyle(.main)
+                VStack(spacing: 5) {
+                    VStack {
+                        Text("재촉하지 마소")
+                            .font(.custom(FontName.neoEB, size: 25))
+                            .foregroundStyle(.main)
+                        Text("내일 잘 찾아가겠소")
+                            .font(.custom(FontName.neoEB, size: 25))
+                            .foregroundStyle(.main)
+                    }
+                    
+                    HStack {
+                        Image(.mooni)
+                            .resizable()
+                            .frame(width: 99, height: 105)
+                        
+                        Image(.gyuni)
+                            .resizable()
+                            .frame(width: 103, height: 115)
+                        
+                        Image(.ezel)
+                            .resizable()
+                            .frame(width: 74, height: 84)
+                    }
+                    .offset(x: -10)
                 }
-                .padding(.bottom, 100)
 
                 Button {
                     
@@ -45,6 +60,7 @@ struct MainView: View {
                     }
                 }
                 .padding(.horizontal, 48)
+                .padding(.top, 80)
                 .tint(.black)
                 
                 NavigationLink {
@@ -69,6 +85,9 @@ struct MainView: View {
                 .tint(.black)
                 
             }
+        }
+        .fullScreenCover(isPresented: $viewModel.isCallComing) {
+            
         }
         
     }
