@@ -12,6 +12,9 @@ struct CallMainView: View {
     @State private var inputText: String = ""
     @State private var isIncorrect: Bool = false
     @State private var animationOffset: CGFloat = 0
+    @State private var isPresented: Bool = false
+    
+    @FocusState private var focused: Bool
     
     let isTest: Bool
     
@@ -25,6 +28,17 @@ struct CallMainView: View {
     ].randomElement()!
     
     var body: some View {
+        VStack {
+            if !isPresented {
+                quizView
+            } else {
+                // TODO: - 뷰 연결
+                Text("퀴즈 성공~")
+            }
+        }
+    }
+    
+    var quizView: some View {
         VStack(alignment: .leading) {
             Text("오늘의 명언을 작성해보세요.")
                 .font(.custom(FontName.neoB, size: 20))
@@ -50,6 +64,7 @@ struct CallMainView: View {
                     .foregroundStyle( isIncorrect ? .red : .textFieldText)
                     .font(.custom(FontName.neoR, size: 17))
                     .padding(10)
+                    .focused($focused)
                 
                 // Placeholder
                 if inputText.isEmpty {
@@ -65,7 +80,11 @@ struct CallMainView: View {
             HStack {
                 Button {
                     if evaluateInputText() {
+                        self.focused = false
                         viewModel.playNextVoice()
+                        withAnimation(.spring) {
+                            self.isPresented = true
+                        }
                     }
                 } label: {
                     ZStack {
@@ -86,6 +105,10 @@ struct CallMainView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 15)
                                 .foregroundStyle(.red)
+                            
+                            Text("통화 종료")
+                                .font(.custom(FontName.neoB, size: 20))
+                                .tint(.white)
                         }
                     }
                     .frame(height: 47)
