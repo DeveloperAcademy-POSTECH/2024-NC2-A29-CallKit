@@ -42,7 +42,8 @@ struct MainView: View {
                 }
 
                 Button {
-                    
+                    viewModel.isTest = true
+                    viewModel.getTestCall()
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 30)
@@ -87,8 +88,11 @@ struct MainView: View {
             }
         }
         .fullScreenCover(isPresented: $viewModel.isCallComing) {
-            
+            CallMainView(isTest: viewModel.isTest)
         }
+//        .onAppear {
+//            viewModel.isCallComing = true
+//        }
         
     }
 }
