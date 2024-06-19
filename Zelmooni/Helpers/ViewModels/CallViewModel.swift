@@ -110,7 +110,7 @@ extension CallViewModel {
         }
     }
     
-    public func endTestCall() {
+    public func endCall() {
         let endCallAction = CXEndCallAction(call: self.id!)
         let transaction = CXTransaction(action: endCallAction)
         

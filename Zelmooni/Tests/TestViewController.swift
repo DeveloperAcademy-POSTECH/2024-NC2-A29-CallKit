@@ -25,6 +25,10 @@ class TestViewController: UIViewController {
             }
         }
         
+        let formatter = DateFormatter()
+        formatter.dateFormat = "E"
+        formatter.string(from: Date())
+        
         print("started!")
     }
 }
