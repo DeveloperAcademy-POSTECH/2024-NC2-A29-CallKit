@@ -65,7 +65,6 @@ struct ModifyVoiceView: View {
             
             Spacer()
         }
-//        .animation(.easeInOut(duration: 0.3), value: selectedMode)
         .padding(.horizontal, 17)
         .onAppear {
             self.savedMode = UserDefaults.standard.integer(forKey: UserDefaults.selectedVoice)

@@ -90,10 +90,6 @@ struct MainView: View {
         .fullScreenCover(isPresented: $viewModel.isCallComing) {
             CallMainView(isTest: viewModel.isTest)
         }
-//        .onAppear {
-//            viewModel.isCallComing = true
-//        }
-        
     }
 }
 

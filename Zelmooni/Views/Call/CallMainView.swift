@@ -33,7 +33,7 @@ struct CallMainView: View {
                 quizView
             } else {
                 // TODO: - 뷰 연결
-                Text("퀴즈 성공~")
+                TodayListMainView()
             }
         }
     }
@@ -82,6 +82,11 @@ struct CallMainView: View {
                     if evaluateInputText() {
                         self.focused = false
                         viewModel.playNextVoice()
+                        
+                        if isTest {
+                            viewModel.isCallComing = false
+                            return
+                        }
                         withAnimation(.spring) {
                             self.isPresented = true
                         }
@@ -100,7 +105,7 @@ struct CallMainView: View {
                 
                 if viewModel.isTest {
                     Button {
-                        viewModel.endTestCall()
+                        viewModel.endCall()
                     } label: {
                         ZStack {
                             RoundedRectangle(cornerRadius: 15)
