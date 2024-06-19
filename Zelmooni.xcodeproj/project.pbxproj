@@ -16,6 +16,7 @@
 		2C270BE92C1F1BDF00B6916B /* pohang.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C270BE82C1F1BDF00B6916B /* pohang.m4a */; };
 		2C47F7352C21C61A00CC1C15 /* TodayListMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47F7342C21C61A00CC1C15 /* TodayListMainView.swift */; };
 		2C47F7372C228BEB00CC1C15 /* TodayListSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47F7362C228BEB00CC1C15 /* TodayListSecondView.swift */; };
+		2C47F7562C22B59400CC1C15 /* STTController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47F7552C22B59400CC1C15 /* STTController.swift */; };
 		2CAB7E672C2001A70079C8FE /* NeoM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E5E2C2001A70079C8FE /* NeoM.ttf */; };
 		2CAB7E682C2001A70079C8FE /* NeoSB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E5F2C2001A70079C8FE /* NeoSB.ttf */; };
 		2CAB7E692C2001A70079C8FE /* NeoR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E602C2001A70079C8FE /* NeoR.ttf */; };
@@ -60,6 +61,7 @@
 		2C270BE82C1F1BDF00B6916B /* pohang.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pohang.m4a; sourceTree = "<group>"; };
 		2C47F7342C21C61A00CC1C15 /* TodayListMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayListMainView.swift; sourceTree = "<group>"; };
 		2C47F7362C228BEB00CC1C15 /* TodayListSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayListSecondView.swift; sourceTree = "<group>"; };
+		2C47F7552C22B59400CC1C15 /* STTController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTController.swift; sourceTree = "<group>"; };
 		2CAB7E5E2C2001A70079C8FE /* NeoM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoM.ttf; sourceTree = "<group>"; };
 		2CAB7E5F2C2001A70079C8FE /* NeoSB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoSB.ttf; sourceTree = "<group>"; };
 		2CAB7E602C2001A70079C8FE /* NeoR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoR.ttf; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				2CAB7E812C202C0C0079C8FE /* ScrollOffsetPreferenceKey.swift */,
 				2CAB7E832C2043750079C8FE /* UserDefaults + Extension.swift */,
 				2CAB7E9B2C2150D50079C8FE /* AudioController.swift */,
+				2C47F7552C22B59400CC1C15 /* STTController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				2CAB7E7E2C2011DB0079C8FE /* OnboardingSecondView.swift in Sources */,
 				2CAB7E9A2C2110BC0079C8FE /* CallMainView.swift in Sources */,
 				2CAB7E8A2C204C870079C8FE /* ModifyVoiceView.swift in Sources */,
+				2C47F7562C22B59400CC1C15 /* STTController.swift in Sources */,
 				2CAB7E782C20115B0079C8FE /* FontName.swift in Sources */,
 				2CAB7EA82C2172A90079C8FE /* empty2.swift in Sources */,
 				2CAB7E942C2073450079C8FE /* OnboardingFourthView.swift in Sources */,
@@ -521,6 +525,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Zelmooni/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "미라콜";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "앱에서 마이크를 사용하여 음성 인식을 처리합니다.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "앱에서 마이크를 사용하여 음성 인식을 처리합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +560,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Zelmooni/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "미라콜";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "앱에서 마이크를 사용하여 음성 인식을 처리합니다.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "앱에서 마이크를 사용하여 음성 인식을 처리합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

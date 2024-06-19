@@ -94,10 +94,11 @@ extension AudioController {
 //            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, options: .duckOthers)
 //            try AVAudioSession.sharedInstance().setCategory(.playAndRecord, mode: .default)
 //            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setCategory(.playback, options: .mixWithOthers)
+//            try AVAudioSession.sharedInstance().setCategory(.playback, options: .mixWithOthers)
+            try AVAudioSession.sharedInstance().setCategory(.playAndRecord)
             try AVAudioSession.sharedInstance().setActive(true)
             
-//            try AVAudioSession.sharedInstance().overrideOutputAudioPort(.speaker)
+            try AVAudioSession.sharedInstance().overrideOutputAudioPort(.speaker)
 
             self.audio = try AVAudioPlayer(contentsOf: url!)
             audio?.numberOfLoops = -1

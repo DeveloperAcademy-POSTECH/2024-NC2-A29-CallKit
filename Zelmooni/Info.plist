@@ -2,11 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
-		<string>voip</string>
-	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>NeoB.ttf</string>
@@ -18,6 +13,11 @@
 		<string>NeoSB.ttf</string>
 		<string>NeoT.ttf</string>
 		<string>NeoUL.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+		<string>voip</string>
 	</array>
 </dict>
 </plist>

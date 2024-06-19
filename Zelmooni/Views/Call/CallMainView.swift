@@ -14,17 +14,19 @@ struct CallMainView: View {
     @State private var animationOffset: CGFloat = 0
     @State private var isPresented: Bool = false
     
+    @State private var speechController = SpeechController()
+    
     @FocusState private var focused: Bool
     
     let isTest: Bool
     
     let randomPhrase: String = [
-        "새로운 자기를 만들지 않은 날들은 모두 잃어버린 것으로 간주하라.",
+        "새로운 자기를 만들지 않은 날들은 모두 잃어버린 것으로 간주하라",
         "오늘 아침 일어날 수 있으니 이 얼마나 행운인가",
-        "어제의 꿈을 오늘의 행동으로 현실로 만드세요.",
-        "내가 해내지 못할 일은 없다, 나의 능력은 무한대이다.",
-        "특별한 삶은 매일 끊임없는 개선을 통해 만들어지는 것이다.",
-        "편안한 영역에서 벗어날 때, 진짜 삶이 시작된다."
+        "어제의 꿈을 오늘의 행동으로 현실로 만드세요",
+        "내가 해내지 못할 일은 없다 나의 능력은 무한대이다",
+        "특별한 삶은 매일 끊임없는 개선을 통해 만들어지는 것이다",
+        "편안한 영역에서 벗어날 때 진짜 삶이 시작된다"
     ].randomElement()!
     
     var body: some View {
@@ -48,6 +50,19 @@ struct CallMainView: View {
             Text(randomPhrase)
                 .font(.custom(FontName.neoEB, size: 30))
                 .foregroundStyle(.main)
+            
+            Button( speechController.isStarted ? "음성인식 멈추기" : "음성인식 시작") {
+                if speechController.audioEngine.isRunning {
+                    speechController.audioEngine.stop()
+                    speechController.isEnabled = false
+                    speechController.isStarted = false
+                    speechController.recognitionRequest?.endAudio()
+                } else {
+                    speechController.text = nil
+                    speechController.isStarted = true
+                    speechController.startRecording()
+                }
+            }
             
             ZStack(alignment: .topLeading) {
 
@@ -81,12 +96,15 @@ struct CallMainView: View {
                 Button {
                     if evaluateInputText() {
                         self.focused = false
-                        viewModel.playNextVoice()
                         
                         if isTest {
+                            viewModel.endCall()
                             viewModel.isCallComing = false
                             return
                         }
+                        
+                        viewModel.playNextVoice()
+                        
                         withAnimation(.spring) {
                             self.isPresented = true
                         }
@@ -121,6 +139,12 @@ struct CallMainView: View {
             }
         }
         .padding(.horizontal, 16)
+        .onChange(of: speechController.text) {
+            inputText = speechController.text ?? ""
+        }
+        .onTapGesture {
+            focused = false
+        }
     }
     
     private func evaluateInputText() -> Bool {
