@@ -15,7 +15,6 @@ class SpeechController: NSObject, SFSpeechRecognizerDelegate {
     var recognitionTask: SFSpeechRecognitionTask?
     let audioEngine = AVAudioEngine()
     
-    var isEnabled = false
     var isStarted: Bool = false
     var text: String?
     
@@ -30,12 +29,15 @@ class SpeechController: NSObject, SFSpeechRecognizerDelegate {
             recognitionTask = nil
         }
         
-//        let audioSession = AVAudioSession.sharedInstance()
-//        do {
-//            try audioSession.setCategory(AVAudioSession.Category.record)
-//            try audioSession.setMode(AVAudioSession.Mode.measurement)
-//            try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
-//        } catch {}
+        let audioSession = AVAudioSession.sharedInstance()
+        
+        do {
+            try audioSession.setCategory(AVAudioSession.Category.playAndRecord, options: .mixWithOthers)
+            try audioSession.setMode(AVAudioSession.Mode.measurement)
+            try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+            
+            try audioSession.overrideOutputAudioPort(.speaker)
+        } catch {}
         
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         let inputNode = audioEngine.inputNode
@@ -63,7 +65,6 @@ class SpeechController: NSObject, SFSpeechRecognizerDelegate {
                 self.recognitionRequest = nil
                 self.recognitionTask = nil
                 
-                self.isEnabled = true
             }
         }
         
@@ -79,5 +80,11 @@ class SpeechController: NSObject, SFSpeechRecognizerDelegate {
         } catch {
             print("\(error.localizedDescription)")
         }
+    }
+    
+    public func stopRecording() {
+        self.audioEngine.stop()
+        self.isStarted = false
+        self.recognitionRequest?.endAudio()
     }
 }

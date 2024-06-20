@@ -20,19 +20,14 @@ struct OnboardingFirstView: View {
             Spacer()
             
             VStack(spacing: 0) {
-                Image(.mooni)
-                    .resizable()
-                    .frame(width: 163, height: 174)
+               
                 HStack {
-                    Image(.ezel)
+                    Image(.메인화면)
                         .resizable()
-                        .frame(width: 114, height: 131)
-                        .offset(y: -15)
-                    Image(.gyuni)
-                        .resizable()
-                        .frame(width: 170, height: 190)
+                        .frame(width: 270, height: 270)
+               
                 }
-                .padding(.leading, 40)
+                
             }
             
             Spacer()

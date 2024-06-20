@@ -13,36 +13,26 @@ struct MainView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                // TODO: 텍스트 수정 예정
-                
                 VStack(spacing: 5) {
                     VStack {
                         Text("재촉하지 마소")
                             .font(.custom(FontName.neoEB, size: 25))
                             .foregroundStyle(.main)
+                        
                         Text("내일 잘 찾아가겠소")
                             .font(.custom(FontName.neoEB, size: 25))
                             .foregroundStyle(.main)
                     }
                     
                     HStack {
-                        Image(.mooni)
+                        Image(.찡긋)
                             .resizable()
-                            .frame(width: 99, height: 105)
-                        
-                        Image(.gyuni)
-                            .resizable()
-                            .frame(width: 103, height: 115)
-                        
-                        Image(.ezel)
-                            .resizable()
-                            .frame(width: 74, height: 84)
+                            .frame(width: 162, height: 162)
                     }
-                    .offset(x: -10)
                 }
 
                 Button {
-                    viewModel.isTest = true
+//                    viewModel.isTest = true
                     viewModel.getTestCall()
                 } label: {
                     ZStack {
@@ -61,7 +51,7 @@ struct MainView: View {
                     }
                 }
                 .padding(.horizontal, 48)
-                .padding(.top, 80)
+                .padding(.top, 30)
                 .tint(.black)
                 
                 NavigationLink {
@@ -86,9 +76,9 @@ struct MainView: View {
                 .tint(.black)
                 
             }
-        }
-        .fullScreenCover(isPresented: $viewModel.isCallComing) {
-            CallMainView(isTest: viewModel.isTest)
+            .fullScreenCover(isPresented: $viewModel.isCallComing) {
+                CallMainView(isTest: viewModel.isTest)
+            }
         }
     }
 }

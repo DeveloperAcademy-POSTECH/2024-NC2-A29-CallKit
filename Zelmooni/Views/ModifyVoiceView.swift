@@ -12,6 +12,8 @@ struct ModifyVoiceView: View {
     @State private var selectedMode: Int?
     @State private var savedMode: Int?
     
+    let audioController = AudioController()
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("목소리를 설정할 수 있어요!")
@@ -30,26 +32,36 @@ struct ModifyVoiceView: View {
                 ezelSelectView
                     .onTapGesture {
                         selectedMode = 0
+                        audioController.startSampleAudio(0)
+                        print("000")
                     }
                 
                 mooniSelectView
                     .onTapGesture {
                         selectedMode = 1
+                        audioController.startSampleAudio(1)
                     }
                 
                 gyuniSelectView
                     .onTapGesture {
                         selectedMode = 2
+                        audioController.startSampleAudio(2)
                     }
             }
             
             Spacer()
             
-            Button {
-                UserDefaults.standard.setValue(selectedMode!, forKey: UserDefaults.selectedVoice)
-                
-                print(UserDefaults.standard.integer(forKey: UserDefaults.selectedVoice))
-                dismiss()
+            NavigationLink {
+                OnboardingFourthView()
+                    .navigationBarBackButtonHidden()
+                    .onAppear {
+                        if selectedMode != nil {
+                            UserDefaults.standard.setValue(selectedMode!, forKey: UserDefaults.selectedVoice)
+                            audioController.startCompleteAudio(self.selectedMode!)
+                        } else {
+                            audioController.startCompleteAudio(self.savedMode!)
+                        }
+                    }
             } label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
@@ -61,7 +73,6 @@ struct ModifyVoiceView: View {
                         .tint(.white)
                 }
             }
-            .disabled(self.selectedMode == savedMode)
             
             Spacer()
         }

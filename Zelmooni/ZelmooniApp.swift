@@ -10,7 +10,6 @@ import SwiftUI
 @main
 struct ZelmooniApp: App {
     @State private var isReadOnboardingView: Bool = UserDefaults.standard.bool(forKey: UserDefaults.onboard)
-//    @State private var isReadOnboardingView: Bool = false
     
     var body: some Scene {
         WindowGroup {

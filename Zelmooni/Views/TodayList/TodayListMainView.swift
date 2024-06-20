@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TodayListMainView: View {
+    @State private var viewModel = CallViewModel.shared
     @State private var status: Status = .first
     @State private var isPresented: Bool = false
     
@@ -24,9 +25,9 @@ struct TodayListMainView: View {
     var body: some View {
         VStack {
             if !self.isPresented {
-                Image(.check)
+                Image(.오늘기록)
                     .resizable()
-                    .frame(width: 106, height: 106)
+                    .frame(width: 150, height: 150)
                 
                 Text("오늘 기록 완료")
                     .font(.custom(FontName.neoEB, size: 30))

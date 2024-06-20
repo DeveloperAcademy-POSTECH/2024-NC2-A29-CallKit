@@ -12,9 +12,9 @@ struct OnboardingFourthView: View {
         VStack {
             Spacer()
             
-            Image(.check)
+            Image(.메인화면)
                 .resizable()
-                .frame(width: 105, height: 105)
+                .frame(width: 120, height: 120)
             
             Text("등록완료")
                 .font(.system(size: 30, weight: .bold))

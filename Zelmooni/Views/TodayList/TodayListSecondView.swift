@@ -14,9 +14,9 @@ struct TodayListSecondView: View {
         VStack {
             Spacer()
             
-            Text("☀️")
-                .font(.system(size: 45))
-                .padding(.bottom, 1)
+            Image(.메인화면)
+                .resizable()
+                .frame(width:150,height: 150)
             
             Text("오늘 하루도 활기차게\n시작할 수 있을 것 같아요!")
                 .font(.custom(FontName.neoEB, size: 28))
