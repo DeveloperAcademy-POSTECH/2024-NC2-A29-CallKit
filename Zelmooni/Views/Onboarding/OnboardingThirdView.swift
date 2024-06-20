@@ -10,6 +10,8 @@ import SwiftUI
 struct OnboardingThirdView: View {
     @State var selectedMode: Int?
     
+    let audioController = AudioController()
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("목소리를 설정할 수 있어요!")
@@ -28,16 +30,20 @@ struct OnboardingThirdView: View {
                 ezelSelectView
                     .onTapGesture {
                         selectedMode = 0
+                        audioController.startSampleAudio(0)
+                        print("1")
                     }
                 
                 mooniSelectView
                     .onTapGesture {
                         selectedMode = 1
+                        audioController.startSampleAudio(1)
                     }
                 
                 gyuniSelectView
                     .onTapGesture {
                         selectedMode = 2
+                        audioController.startSampleAudio(2)
                     }
             }
             
@@ -47,6 +53,7 @@ struct OnboardingThirdView: View {
                 OnboardingFourthView()
                     .navigationBarBackButtonHidden()
                     .onAppear {
+                        audioController.startCompleteAudio(selectedMode!)
                         let ud = UserDefaults.standard
                         
                         // 처음 본 여부 저장

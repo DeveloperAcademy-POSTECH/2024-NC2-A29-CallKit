@@ -51,19 +51,6 @@ struct CallMainView: View {
                 .font(.custom(FontName.neoEB, size: 30))
                 .foregroundStyle(.main)
             
-            Button( speechController.isStarted ? "음성인식 멈추기" : "음성인식 시작") {
-                if speechController.audioEngine.isRunning {
-                    speechController.audioEngine.stop()
-                    speechController.isEnabled = false
-                    speechController.isStarted = false
-                    speechController.recognitionRequest?.endAudio()
-                } else {
-                    speechController.text = nil
-                    speechController.isStarted = true
-                    speechController.startRecording()
-                }
-            }
-            
             ZStack(alignment: .topLeading) {
 
                 RoundedRectangle(cornerRadius: 15)
@@ -90,7 +77,35 @@ struct CallMainView: View {
                 }
             }
             .offset(x: self.animationOffset)
-            .padding(.bottom, 50)
+            .padding(.bottom, 100)
+            .overlay(alignment: .bottomTrailing) {
+                Button {
+                    if speechController.audioEngine.isRunning {
+                        speechController.stopRecording()
+                    } else {
+                        speechController.text = nil
+                        speechController.isStarted = true
+                        speechController.startRecording()
+                    }
+                } label: {
+                    if speechController.isStarted {
+                        Image(systemName: "stop.circle.fill")
+                            .resizable()
+                            .foregroundStyle(.white, .red)
+                            .frame(width: 52, height: 52)
+                            .shadow(radius: 5)
+                    } else {
+                        Image(systemName: "mic.circle.fill")
+                            .resizable()
+                            .foregroundStyle(.white, .main)
+                            .frame(width: 52, height: 52)
+                            .shadow(radius: 5)
+
+                    }
+                }
+                .padding(.bottom, 110)
+                .padding(.trailing, 10)
+            }
             
             HStack {
                 Button {

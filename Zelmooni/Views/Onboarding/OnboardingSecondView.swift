@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFAudio
 
 
 struct OnboardingSecondView: View {
@@ -46,6 +47,15 @@ struct OnboardingSecondView: View {
                 }
             }
             .padding(.bottom, 83)
+            .onAppear {
+                AVAudioApplication.requestRecordPermission { auth in
+                    if auth {
+                        print("Success")
+                    } else {
+                        print("Failed")
+                    }
+                }
+            }
         }
     }
 }

@@ -54,7 +54,7 @@ extension CallViewModel: PKPushRegistryDelegate, CXProviderDelegate {
     
     func provider(_ provider: CXProvider, perform action: CXAnswerCallAction) {
         isCallComing = true
-        self.audio.startTestAudio()
+        self.audio.startAudio()
         action.fulfill()
     }
     
@@ -88,12 +88,15 @@ extension CallViewModel: PKPushRegistryDelegate, CXProviderDelegate {
     }
 }
 
+
+
 // MARK: - 통화 테스트 버튼 메소드
 extension CallViewModel {
     public func getTestCall() {
         let config = CXProviderConfiguration()
         config.includesCallsInRecents = true
         config.supportsVideo = false
+//        config.ringtoneSound = "벨소리.mp3"
         
         let provider = CXProvider(configuration: config)
         provider.setDelegate(self, queue: nil)
@@ -122,11 +125,13 @@ extension CallViewModel {
     }
 }
 
+
 // MARK: - 목소리 재생 메소드
 extension CallViewModel {
     public func playNextVoice() {
-        self.audio.startSecondAudio()
+//        self.audio.startSecondAudio()
 //        self.audio.startSecondTestAudio()
+        self.audio.startThirdAudio()
     }
 }
 
