@@ -25,7 +25,7 @@ struct TodayListMainView: View {
     var body: some View {
         VStack {
             if !self.isPresented {
-                Image(.오늘기록)
+                Image(.todayDiary)
                     .resizable()
                     .frame(width: 150, height: 150)
                 

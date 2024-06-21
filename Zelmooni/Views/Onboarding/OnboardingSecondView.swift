@@ -10,6 +10,8 @@ import AVFAudio
 
 
 struct OnboardingSecondView: View {
+    @Binding var isPresented: Bool
+    
     var body: some View {
         VStack {
             VStack {
@@ -33,7 +35,7 @@ struct OnboardingSecondView: View {
             Spacer()
             
             NavigationLink {
-                OnboardingThirdView()
+                OnboardingThirdView(isPresented: $isPresented)
             } label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
@@ -60,6 +62,6 @@ struct OnboardingSecondView: View {
     }
 }
 
-#Preview {
-    OnboardingSecondView()
-}
+//#Preview {
+//    OnboardingSecondView()
+//}

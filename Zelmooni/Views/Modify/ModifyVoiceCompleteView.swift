@@ -1,14 +1,14 @@
 //
-//  OnboardingFourthView.swift
+//  ModifyVoiceCompleteView.swift
 //  Zelmooni
 //
-//  Created by 문인범 on 6/17/24.
+//  Created by 문인범 on 6/21/24.
 //
 
 import SwiftUI
 
-struct OnboardingFourthView: View {
-    @Binding var isPresented: Bool
+struct ModifyVoiceCompleteView: View {
+    @Binding var status: [NavigationStatus]
     
     var body: some View {
         VStack {
@@ -27,9 +27,9 @@ struct OnboardingFourthView: View {
                 .foregroundStyle(.main)
             
             Spacer()
-            
+
             Button {
-                self.isPresented = false
+                status = []
             } label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
@@ -43,6 +43,7 @@ struct OnboardingFourthView: View {
             }
             .padding(.horizontal, 16)
             .padding(.bottom, 80)
+            
         }
     }
 }

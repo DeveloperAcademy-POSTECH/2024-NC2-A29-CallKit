@@ -9,9 +9,10 @@ import SwiftUI
 
 struct MainView: View {
     @State private var viewModel = CallViewModel.shared
+    @State private var path: [NavigationStatus] = []
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             VStack {
                 VStack(spacing: 5) {
                     VStack {
@@ -25,7 +26,7 @@ struct MainView: View {
                     }
                     
                     HStack {
-                        Image(.찡긋)
+                        Image(.oneEyeOpen)
                             .resizable()
                             .frame(width: 162, height: 162)
                     }
@@ -54,9 +55,7 @@ struct MainView: View {
                 .padding(.top, 30)
                 .tint(.black)
                 
-                NavigationLink {
-                    ModifyVoiceView()
-                } label: {
+                NavigationLink(value: NavigationStatus.modify) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 30)
                             .stroke(lineWidth: 2)
@@ -79,10 +78,25 @@ struct MainView: View {
             .fullScreenCover(isPresented: $viewModel.isCallComing) {
                 CallMainView(isTest: viewModel.isTest)
             }
+            .navigationDestination(for: NavigationStatus.self) { status in
+                if status == .modify {
+                    ModifyVoiceView(path: $path)
+                } else {
+                    ModifyVoiceCompleteView(status: $path)
+                        .navigationBarBackButtonHidden()
+                }
+            }
         }
+        .tint(.main)
     }
+
 }
 
 #Preview {
     MainView()
+}
+
+enum NavigationStatus {
+   case modify
+   case complete
 }

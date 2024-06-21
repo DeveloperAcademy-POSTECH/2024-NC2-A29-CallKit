@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ModifyVoiceView: View {
-    @Environment(\.dismiss) private var dismiss
     @State private var selectedMode: Int?
     @State private var savedMode: Int?
+    
+    @Binding var path: [NavigationStatus]
     
     let audioController = AudioController()
     
@@ -51,17 +52,15 @@ struct ModifyVoiceView: View {
             
             Spacer()
             
-            NavigationLink {
-                OnboardingFourthView()
-                    .navigationBarBackButtonHidden()
-                    .onAppear {
-                        if selectedMode != nil {
-                            UserDefaults.standard.setValue(selectedMode!, forKey: UserDefaults.selectedVoice)
-                            audioController.startCompleteAudio(self.selectedMode!)
-                        } else {
-                            audioController.startCompleteAudio(self.savedMode!)
-                        }
-                    }
+            Button {
+                if selectedMode != nil {
+                    UserDefaults.standard.setValue(selectedMode!, forKey: UserDefaults.selectedVoice)
+                    audioController.startCompleteAudio(self.selectedMode!)
+                } else {
+                    audioController.startCompleteAudio(self.savedMode!)
+                }
+                
+                path.append(.complete)
             } label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
@@ -80,12 +79,6 @@ struct ModifyVoiceView: View {
         .onAppear {
             self.savedMode = UserDefaults.standard.integer(forKey: UserDefaults.selectedVoice)
             self.selectedMode = self.savedMode
-        }
-        .navigationBarBackButtonHidden()
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                backButton
-            }
         }
     }
     
@@ -167,21 +160,9 @@ struct ModifyVoiceView: View {
             .padding(.horizontal, 25)
         }
     }
-    
-    var backButton: some View {
-        Button {
-            dismiss()
-        } label: {
-            HStack(spacing: 0) {
-                Image(systemName: "chevron.left")
-                Text("뒤로")
-                    .fontWeight(.semibold)
-            }
-        }
-        .tint(.main)
-    }
+
 }
 
-#Preview {
-    ModifyVoiceView()
-}
+//#Preview {
+//    ModifyVoiceView()
+//}
