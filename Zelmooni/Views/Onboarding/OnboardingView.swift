@@ -10,10 +10,12 @@ import SwiftUI
 
 
 struct OnboardingView: View {
+    @Binding var isPresented: Bool
+    
     var body: some View {
         VStack {
             NavigationStack {
-                OnboardingFirstView()
+                OnboardingFirstView(isPresented: $isPresented)
             }
             .tint(.main)
         }
@@ -22,6 +24,6 @@ struct OnboardingView: View {
 
 
 
-#Preview {
-    OnboardingView()
-}
+//#Preview {
+//    OnboardingView()
+//}

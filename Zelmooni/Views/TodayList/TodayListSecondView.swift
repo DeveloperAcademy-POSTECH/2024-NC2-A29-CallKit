@@ -14,7 +14,7 @@ struct TodayListSecondView: View {
         VStack {
             Spacer()
             
-            Image(.메인화면)
+            Image(.mainView)
                 .resizable()
                 .frame(width:150,height: 150)
             

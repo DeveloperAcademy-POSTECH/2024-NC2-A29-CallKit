@@ -53,7 +53,7 @@ extension CallViewModel: PKPushRegistryDelegate, CXProviderDelegate {
     }
     
     func provider(_ provider: CXProvider, perform action: CXAnswerCallAction) {
-        isCallComing = true
+        self.isCallComing = true
         self.audio.startAudio()
         action.fulfill()
     }

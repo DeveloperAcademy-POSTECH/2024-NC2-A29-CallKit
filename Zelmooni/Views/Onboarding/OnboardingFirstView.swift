@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct OnboardingFirstView: View {
+    @Binding var isPresented: Bool
+    
     var body: some View {
         VStack {
             Text("매일 6시 30분")
@@ -22,7 +24,7 @@ struct OnboardingFirstView: View {
             VStack(spacing: 0) {
                
                 HStack {
-                    Image(.메인화면)
+                    Image(.mainView)
                         .resizable()
                         .frame(width: 270, height: 270)
                
@@ -33,7 +35,7 @@ struct OnboardingFirstView: View {
             Spacer()
             
             NavigationLink {
-                OnboardingSecondView()
+                OnboardingSecondView(isPresented: $isPresented)
             } label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
@@ -53,6 +55,6 @@ struct OnboardingFirstView: View {
 }
 
 
-#Preview {
-    OnboardingFirstView()
-}
+//#Preview {
+//    OnboardingFirstView()
+//}

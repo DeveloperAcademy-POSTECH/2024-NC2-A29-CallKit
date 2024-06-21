@@ -10,6 +10,8 @@ import SwiftUI
 struct OnboardingThirdView: View {
     @State var selectedMode: Int?
     
+    @Binding var isPresented: Bool
+    
     let audioController = AudioController()
     
     var body: some View {
@@ -50,7 +52,7 @@ struct OnboardingThirdView: View {
             Spacer()
             
             NavigationLink {
-                OnboardingFourthView()
+                OnboardingFourthView(isPresented: $isPresented)
                     .navigationBarBackButtonHidden()
                     .onAppear {
                         audioController.startCompleteAudio(selectedMode!)
@@ -164,6 +166,6 @@ struct OnboardingThirdView: View {
     
 }
 
-#Preview {
-    OnboardingThirdView()
-}
+//#Preview {
+//    OnboardingThirdView()
+//}

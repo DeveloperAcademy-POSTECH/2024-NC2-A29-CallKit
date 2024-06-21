@@ -29,6 +29,7 @@
 		2C630CE02C2402A8005D3F95 /* 규니1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C630CDD2C2402A8005D3F95 /* 규니1.m4a */; };
 		2C630CE32C2402B2005D3F95 /* 규니선택.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C630CE12C2402B2005D3F95 /* 규니선택.m4a */; };
 		2C630CE42C2402B2005D3F95 /* 규니선택완료.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C630CE22C2402B2005D3F95 /* 규니선택완료.m4a */; };
+		2C630CE72C252F87005D3F95 /* ModifyVoiceCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C630CE62C252F87005D3F95 /* ModifyVoiceCompleteView.swift */; };
 		2CAB7E672C2001A70079C8FE /* NeoM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E5E2C2001A70079C8FE /* NeoM.ttf */; };
 		2CAB7E682C2001A70079C8FE /* NeoSB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E5F2C2001A70079C8FE /* NeoSB.ttf */; };
 		2CAB7E692C2001A70079C8FE /* NeoR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E602C2001A70079C8FE /* NeoR.ttf */; };
@@ -83,6 +84,7 @@
 		2C630CDD2C2402A8005D3F95 /* 규니1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "규니1.m4a"; sourceTree = "<group>"; };
 		2C630CE12C2402B2005D3F95 /* 규니선택.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "규니선택.m4a"; sourceTree = "<group>"; };
 		2C630CE22C2402B2005D3F95 /* 규니선택완료.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "규니선택완료.m4a"; sourceTree = "<group>"; };
+		2C630CE62C252F87005D3F95 /* ModifyVoiceCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyVoiceCompleteView.swift; sourceTree = "<group>"; };
 		2CAB7E5E2C2001A70079C8FE /* NeoM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoM.ttf; sourceTree = "<group>"; };
 		2CAB7E5F2C2001A70079C8FE /* NeoSB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoSB.ttf; sourceTree = "<group>"; };
 		2CAB7E602C2001A70079C8FE /* NeoR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoR.ttf; sourceTree = "<group>"; };
@@ -180,6 +182,15 @@
 			path = TestSound;
 			sourceTree = "<group>";
 		};
+		2C630CE82C25381D005D3F95 /* Modify */ = {
+			isa = PBXGroup;
+			children = (
+				2CAB7E892C204C870079C8FE /* ModifyVoiceView.swift */,
+				2C630CE62C252F87005D3F95 /* ModifyVoiceCompleteView.swift */,
+			);
+			path = Modify;
+			sourceTree = "<group>";
+		};
 		2CAB7E5D2C20019A0079C8FE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,11 +203,11 @@
 		2CAB7E702C2006A30079C8FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2C630CE82C25381D005D3F95 /* Modify */,
 				2C47F7332C21C54300CC1C15 /* TodayList */,
 				2CAB7E982C2110480079C8FE /* Call */,
 				2CAB7E732C2011150079C8FE /* Onboarding */,
 				2CAB7E872C2046530079C8FE /* MainView.swift */,
-				2CAB7E892C204C870079C8FE /* ModifyVoiceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -418,6 +429,7 @@
 				2CAB7E972C210CF50079C8FE /* CallViewModel.swift in Sources */,
 				2C47F7372C228BEB00CC1C15 /* TodayListSecondView.swift in Sources */,
 				2CAB7E802C20135C0079C8FE /* OnboardingThirdView.swift in Sources */,
+				2C630CE72C252F87005D3F95 /* ModifyVoiceCompleteView.swift in Sources */,
 				2CAB7E7C2C2011A00079C8FE /* View + Extension.swift in Sources */,
 				2CAB7E9C2C2150D50079C8FE /* AudioController.swift in Sources */,
 				2C47F7352C21C61A00CC1C15 /* TodayListMainView.swift in Sources */,
