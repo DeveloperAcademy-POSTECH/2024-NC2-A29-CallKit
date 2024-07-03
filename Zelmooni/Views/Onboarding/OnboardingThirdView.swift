@@ -165,3 +165,7 @@ struct OnboardingThirdView: View {
     }
     
 }
+
+//#Preview {
+//    OnboardingThirdView()
+//}

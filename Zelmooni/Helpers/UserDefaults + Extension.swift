@@ -11,6 +11,4 @@ import Foundation
 extension UserDefaults {
     static let onboard = "onboard"
     static let selectedVoice = "selectedVoice"
-    static let token = "deviceToken"
-    static let isEnabled = "isEnabled"
 }

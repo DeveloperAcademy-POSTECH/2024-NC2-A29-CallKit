@@ -9,8 +9,6 @@ import SwiftUI
 
 @main
 struct ZelmooniApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
     @State private var isReadOnboardingView: Bool = false
     
     var body: some Scene {

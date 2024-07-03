@@ -130,6 +130,7 @@ extension TodayListMainView {
         default:
             return 4
         }
+//        4
     }
     
     private func getWeekString(_ index: Int) -> String {

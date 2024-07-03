@@ -21,7 +21,6 @@ class CallViewModel: NSObject {
     private var id: UUID?
     
     private var audio: AudioController = .init()
-    private let dbController: DBController = .init()
     
     var selectedVoice: String {
         switch UserDefaults.standard.integer(forKey: UserDefaults.selectedVoice) {
@@ -50,22 +49,11 @@ extension CallViewModel: PKPushRegistryDelegate, CXProviderDelegate {
     }
     
     func pushRegistry(_ registry: PKPushRegistry, didUpdate pushCredentials: PKPushCredentials, for type: PKPushType) {
-        let deviceToken = pushCredentials.token.map { String(format: "%02.2hhx", $0) }.joined()
-//        print(deviceToken)
-        let userDefaults = UserDefaults.standard
-        if userDefaults.string(forKey: UserDefaults.token) == nil {
-            userDefaults.set(deviceToken, forKey: UserDefaults.token)
-        }
-
-        Task.init {
-            await dbController.registryToken(deviceToken)
-        }
+        print(pushCredentials.token.map { String(format: "%02.2hhx", $0) }.joined())
     }
     
     func provider(_ provider: CXProvider, perform action: CXAnswerCallAction) {
-        withAnimation {
-            self.isCallComing = true
-        }
+        self.isCallComing = true
         self.audio.startAudio()
         action.fulfill()
     }
@@ -75,6 +63,7 @@ extension CallViewModel: PKPushRegistryDelegate, CXProviderDelegate {
         self.isTest = false
         self.audio.stopAudio()
         action.fulfill()
+
     }
     
     func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingPushWith payload: PKPushPayload, for type: PKPushType, completion: @escaping () -> Void) {
@@ -116,8 +105,6 @@ extension CallViewModel {
         update.remoteHandle = CXHandle(type: .generic, value: selectedVoice)
         update.hasVideo = false
         self.id = UUID()
-        
-//        dbController.registryToken("1231234")
                 
         provider.reportNewIncomingCall(with: self.id!, update: update) { error in
             if let error = error {
