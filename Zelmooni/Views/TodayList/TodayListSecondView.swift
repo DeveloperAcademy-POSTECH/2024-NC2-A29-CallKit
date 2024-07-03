@@ -32,7 +32,9 @@ struct TodayListSecondView: View {
             
             Button {
                 viewModel.endCall()
-                viewModel.isCallComing = false
+                withAnimation {
+                    viewModel.isCallComing = false
+                }
             } label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)

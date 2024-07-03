@@ -61,7 +61,3 @@ struct OnboardingSecondView: View {
         }
     }
 }
-
-//#Preview {
-//    OnboardingSecondView()
-//}

@@ -76,12 +76,7 @@ class AudioController: NSObject {
             return
         }
         
-        let session = AVAudioSession.sharedInstance()
-        
         do {
-//            try session.setCategory(.playback, options: .mixWithOthers)
-//            try session.setActive(true)
-            
             self.audio = try AVAudioPlayer(contentsOf: url)
             self.audio?.numberOfLoops = -1
             
