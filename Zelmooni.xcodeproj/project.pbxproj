@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1884C12C2D4669006DC8C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1884C02C2D4669006DC8C7 /* AppDelegate.swift */; };
+		2C1884C42C2D4828006DC8C7 /* DBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1884C32C2D4828006DC8C7 /* DBController.swift */; };
 		2C270BD02C1D7E4600B6916B /* ZelmooniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C270BCF2C1D7E4600B6916B /* ZelmooniApp.swift */; };
 		2C270BD42C1D7E4700B6916B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C270BD32C1D7E4700B6916B /* Assets.xcassets */; };
 		2C270BD72C1D7E4700B6916B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C270BD62C1D7E4700B6916B /* Preview Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		2C47F7662C22EFFF00CC1C15 /* 이젤3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C47F7622C22EFFF00CC1C15 /* 이젤3.m4a */; };
 		2C47F7682C22F7C300CC1C15 /* 무니선택완료.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C47F7672C22F7C300CC1C15 /* 무니선택완료.m4a */; };
 		2C47F76A2C22F7CB00CC1C15 /* 이젤선택완료.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C47F7692C22F7CB00CC1C15 /* 이젤선택완료.m4a */; };
+		2C5D01B42C2FDDAC00A94332 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C5D01B32C2FDDAC00A94332 /* GoogleService-Info.plist */; };
+		2C5D01F02C3260B300A94332 /* NavigationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5D01EF2C3260B300A94332 /* NavigationStatus.swift */; };
 		2C630CDE2C2402A8005D3F95 /* 규니2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C630CDB2C2402A8005D3F95 /* 규니2.m4a */; };
 		2C630CDF2C2402A8005D3F95 /* 규니3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C630CDC2C2402A8005D3F95 /* 규니3.m4a */; };
 		2C630CE02C2402A8005D3F95 /* 규니1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C630CDD2C2402A8005D3F95 /* 규니1.m4a */; };
@@ -56,9 +60,12 @@
 		2CAB7E9E2C2168630079C8FE /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E9D2C2168630079C8FE /* forest.mp3 */; };
 		2CAB7EA02C2170890079C8FE /* testmusic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E9F2C2170890079C8FE /* testmusic.m4a */; };
 		2CAB7EA62C2172A10079C8FE /* empty1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7EA52C2172A10079C8FE /* empty1.swift */; };
+		96BAB202CB91273A93606A52 /* Pods_Zelmooni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19D88A1815B0B4645A9DD37 /* Pods_Zelmooni.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1884C02C2D4669006DC8C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C1884C32C2D4828006DC8C7 /* DBController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBController.swift; sourceTree = "<group>"; };
 		2C270BCC2C1D7E4600B6916B /* Zelmooni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zelmooni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C270BCF2C1D7E4600B6916B /* ZelmooniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZelmooniApp.swift; sourceTree = "<group>"; };
 		2C270BD32C1D7E4700B6916B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +86,8 @@
 		2C47F7622C22EFFF00CC1C15 /* 이젤3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "이젤3.m4a"; sourceTree = "<group>"; };
 		2C47F7672C22F7C300CC1C15 /* 무니선택완료.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "무니선택완료.m4a"; sourceTree = "<group>"; };
 		2C47F7692C22F7CB00CC1C15 /* 이젤선택완료.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "이젤선택완료.m4a"; sourceTree = "<group>"; };
+		2C5D01B32C2FDDAC00A94332 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C5D01EF2C3260B300A94332 /* NavigationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStatus.swift; sourceTree = "<group>"; };
 		2C630CDB2C2402A8005D3F95 /* 규니2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "규니2.m4a"; sourceTree = "<group>"; };
 		2C630CDC2C2402A8005D3F95 /* 규니3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "규니3.m4a"; sourceTree = "<group>"; };
 		2C630CDD2C2402A8005D3F95 /* 규니1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "규니1.m4a"; sourceTree = "<group>"; };
@@ -111,6 +120,9 @@
 		2CAB7E9D2C2168630079C8FE /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forest.mp3; sourceTree = "<group>"; };
 		2CAB7E9F2C2170890079C8FE /* testmusic.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = testmusic.m4a; sourceTree = "<group>"; };
 		2CAB7EA52C2172A10079C8FE /* empty1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty1.swift; sourceTree = "<group>"; };
+		3EA779314BA99A98C044B05E /* Pods-Zelmooni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zelmooni.debug.xcconfig"; path = "Target Support Files/Pods-Zelmooni/Pods-Zelmooni.debug.xcconfig"; sourceTree = "<group>"; };
+		75F930932CBA2884D46DBD52 /* Pods-Zelmooni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zelmooni.release.xcconfig"; path = "Target Support Files/Pods-Zelmooni/Pods-Zelmooni.release.xcconfig"; sourceTree = "<group>"; };
+		B19D88A1815B0B4645A9DD37 /* Pods_Zelmooni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zelmooni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,17 +130,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BAB202CB91273A93606A52 /* Pods_Zelmooni.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06CB53AFAA7039FB69C928D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EA779314BA99A98C044B05E /* Pods-Zelmooni.debug.xcconfig */,
+				75F930932CBA2884D46DBD52 /* Pods-Zelmooni.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2C1884C22C2D47EC006DC8C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2CAB7E832C2043750079C8FE /* UserDefaults + Extension.swift */,
+				2CAB7E7B2C2011A00079C8FE /* View + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2C270BC32C1D7E4600B6916B = {
 			isa = PBXGroup;
 			children = (
 				2C270BCE2C1D7E4600B6916B /* Zelmooni */,
 				2C270BCD2C1D7E4600B6916B /* Products */,
+				06CB53AFAA7039FB69C928D4 /* Pods */,
+				A379F8BDEA8DC797297E0921 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +177,7 @@
 		2C270BCE2C1D7E4600B6916B /* Zelmooni */ = {
 			isa = PBXGroup;
 			children = (
+				2C5D01B32C2FDDAC00A94332 /* GoogleService-Info.plist */,
 				2CAB7E762C20114E0079C8FE /* Helpers */,
 				2CAB7E702C2006A30079C8FE /* Views */,
 				2C270BE02C1D888900B6916B /* Zelmooni.entitlements */,
@@ -227,13 +262,15 @@
 		2CAB7E762C20114E0079C8FE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2C1884C22C2D47EC006DC8C7 /* Extensions */,
 				2CAB7E952C210CE40079C8FE /* ViewModels */,
 				2CAB7E772C20115B0079C8FE /* FontName.swift */,
 				2CAB7E792C2011840079C8FE /* TextViewModifier.swift */,
-				2CAB7E7B2C2011A00079C8FE /* View + Extension.swift */,
-				2CAB7E832C2043750079C8FE /* UserDefaults + Extension.swift */,
 				2CAB7E9B2C2150D50079C8FE /* AudioController.swift */,
 				2C47F7552C22B59400CC1C15 /* STTController.swift */,
+				2C1884C02C2D4669006DC8C7 /* AppDelegate.swift */,
+				2C1884C32C2D4828006DC8C7 /* DBController.swift */,
+				2C5D01EF2C3260B300A94332 /* NavigationStatus.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -318,6 +355,14 @@
 			path = Gyuni;
 			sourceTree = "<group>";
 		};
+		A379F8BDEA8DC797297E0921 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B19D88A1815B0B4645A9DD37 /* Pods_Zelmooni.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,13 +370,43 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C270BDA2C1D7E4700B6916B /* Build configuration list for PBXNativeTarget "Zelmooni" */;
 			buildPhases = (
+				778CF7B548F49E4943745518 /* [CP] Check Pods Manifest.lock */,
 				2C270BC82C1D7E4600B6916B /* Sources */,
 				2C270BC92C1D7E4600B6916B /* Frameworks */,
 				2C270BCA2C1D7E4600B6916B /* Resources */,
+				FF8428EA498FDB0FB221AAC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2C5D01EE2C2FE73700A94332 /* PBXTargetDependency */,
+				2C5D01B62C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01B82C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01BA2C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01BC2C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01C02C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01C22C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01C42C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01C62C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01C82C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01CA2C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01CC2C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01CE2C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01D02C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01D22C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01D42C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01D62C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01D82C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01DA2C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01DC2C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01DE2C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01E02C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01E22C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01E42C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01E62C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01E82C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01EA2C2FE4DD00A94332 /* PBXTargetDependency */,
+				2C5D01EC2C2FE4DD00A94332 /* PBXTargetDependency */,
 			);
 			name = Zelmooni;
 			productName = Zelmooni;
@@ -393,6 +468,7 @@
 				2C47F75E2C22EFF400CC1C15 /* 무니선택.m4a in Resources */,
 				2CAB7E6C2C2001A70079C8FE /* NeoB.ttf in Resources */,
 				2C47F7642C22EFFF00CC1C15 /* 이젤1.m4a in Resources */,
+				2C5D01B42C2FDDAC00A94332 /* GoogleService-Info.plist in Resources */,
 				2C630CDE2C2402A8005D3F95 /* 규니2.m4a in Resources */,
 				2C47F7662C22EFFF00CC1C15 /* 이젤3.m4a in Resources */,
 				2C630CE32C2402B2005D3F95 /* 규니선택.m4a in Resources */,
@@ -410,6 +486,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		778CF7B548F49E4943745518 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zelmooni-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF8428EA498FDB0FB221AAC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zelmooni/Pods-Zelmooni-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zelmooni/Pods-Zelmooni-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zelmooni/Pods-Zelmooni-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C270BC82C1D7E4600B6916B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -424,6 +542,7 @@
 				2CAB7E8A2C204C870079C8FE /* ModifyVoiceView.swift in Sources */,
 				2C47F7562C22B59400CC1C15 /* STTController.swift in Sources */,
 				2CAB7E782C20115B0079C8FE /* FontName.swift in Sources */,
+				2C1884C42C2D4828006DC8C7 /* DBController.swift in Sources */,
 				2CAB7E942C2073450079C8FE /* OnboardingFourthView.swift in Sources */,
 				2CAB7E752C2011280079C8FE /* OnboardingFirstView.swift in Sources */,
 				2CAB7E972C210CF50079C8FE /* CallViewModel.swift in Sources */,
@@ -433,12 +552,129 @@
 				2CAB7E7C2C2011A00079C8FE /* View + Extension.swift in Sources */,
 				2CAB7E9C2C2150D50079C8FE /* AudioController.swift in Sources */,
 				2C47F7352C21C61A00CC1C15 /* TodayListMainView.swift in Sources */,
+				2C1884C12C2D4669006DC8C7 /* AppDelegate.swift in Sources */,
 				2C270BD02C1D7E4600B6916B /* ZelmooniApp.swift in Sources */,
+				2C5D01F02C3260B300A94332 /* NavigationStatus.swift in Sources */,
 				2CAB7EA62C2172A10079C8FE /* empty1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C5D01B62C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01B52C2FE4DD00A94332 /* FirebaseAnalytics */;
+		};
+		2C5D01B82C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01B72C2FE4DD00A94332 /* FirebaseAnalyticsOnDeviceConversion */;
+		};
+		2C5D01BA2C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01B92C2FE4DD00A94332 /* FirebaseAnalyticsSwift */;
+		};
+		2C5D01BC2C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01BB2C2FE4DD00A94332 /* FirebaseAnalyticsWithoutAdIdSupport */;
+		};
+		2C5D01C02C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01BF2C2FE4DD00A94332 /* FirebaseAppDistribution-Beta */;
+		};
+		2C5D01C22C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01C12C2FE4DD00A94332 /* FirebaseAuth */;
+		};
+		2C5D01C42C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01C32C2FE4DD00A94332 /* FirebaseAuthCombine-Community */;
+		};
+		2C5D01C62C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01C52C2FE4DD00A94332 /* FirebaseCrashlytics */;
+		};
+		2C5D01C82C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01C72C2FE4DD00A94332 /* FirebaseDatabase */;
+		};
+		2C5D01CA2C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01C92C2FE4DD00A94332 /* FirebaseDatabaseSwift */;
+		};
+		2C5D01CC2C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01CB2C2FE4DD00A94332 /* FirebaseDynamicLinks */;
+		};
+		2C5D01CE2C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01CD2C2FE4DD00A94332 /* FirebaseFirestore */;
+		};
+		2C5D01D02C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01CF2C2FE4DD00A94332 /* FirebaseFirestoreCombine-Community */;
+		};
+		2C5D01D22C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01D12C2FE4DD00A94332 /* FirebaseFirestoreSwift */;
+		};
+		2C5D01D42C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01D32C2FE4DD00A94332 /* FirebaseFunctions */;
+		};
+		2C5D01D62C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01D52C2FE4DD00A94332 /* FirebaseFunctionsCombine-Community */;
+		};
+		2C5D01D82C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01D72C2FE4DD00A94332 /* FirebaseInAppMessaging-Beta */;
+		};
+		2C5D01DA2C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01D92C2FE4DD00A94332 /* FirebaseInAppMessagingSwift-Beta */;
+		};
+		2C5D01DC2C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01DB2C2FE4DD00A94332 /* FirebaseInstallations */;
+		};
+		2C5D01DE2C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01DD2C2FE4DD00A94332 /* FirebaseMLModelDownloader */;
+		};
+		2C5D01E02C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01DF2C2FE4DD00A94332 /* FirebaseMessaging */;
+		};
+		2C5D01E22C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01E12C2FE4DD00A94332 /* FirebasePerformance */;
+		};
+		2C5D01E42C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01E32C2FE4DD00A94332 /* FirebaseRemoteConfig */;
+		};
+		2C5D01E62C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01E52C2FE4DD00A94332 /* FirebaseRemoteConfigSwift */;
+		};
+		2C5D01E82C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01E72C2FE4DD00A94332 /* FirebaseStorage */;
+		};
+		2C5D01EA2C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01E92C2FE4DD00A94332 /* FirebaseStorageCombine-Community */;
+		};
+		2C5D01EC2C2FE4DD00A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01EB2C2FE4DD00A94332 /* FirebaseVertexAI-Preview */;
+		};
+		2C5D01EE2C2FE73700A94332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2C5D01ED2C2FE73700A94332 /* FirebaseAppCheck */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2C270BD82C1D7E4700B6916B /* Debug */ = {
@@ -562,6 +798,7 @@
 		};
 		2C270BDB2C1D7E4700B6916B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA779314BA99A98C044B05E /* Pods-Zelmooni.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -571,6 +808,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Zelmooni/Preview Content\"";
 				DEVELOPMENT_TEAM = VF8R3A969C;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Zelmooni/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "미라콜";
@@ -597,6 +835,7 @@
 		};
 		2C270BDC2C1D7E4700B6916B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75F930932CBA2884D46DBD52 /* Pods-Zelmooni.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -606,6 +845,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Zelmooni/Preview Content\"";
 				DEVELOPMENT_TEAM = VF8R3A969C;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Zelmooni/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "미라콜";
@@ -652,6 +892,160 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C5D01B52C2FE4DD00A94332 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		2C5D01B72C2FE4DD00A94332 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		2C5D01B92C2FE4DD00A94332 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		2C5D01BB2C2FE4DD00A94332 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		2C5D01BF2C2FE4DD00A94332 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		2C5D01C12C2FE4DD00A94332 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2C5D01C32C2FE4DD00A94332 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		2C5D01C52C2FE4DD00A94332 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		2C5D01C72C2FE4DD00A94332 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		2C5D01C92C2FE4DD00A94332 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		2C5D01CB2C2FE4DD00A94332 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		2C5D01CD2C2FE4DD00A94332 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2C5D01CF2C2FE4DD00A94332 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		2C5D01D12C2FE4DD00A94332 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		2C5D01D32C2FE4DD00A94332 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		2C5D01D52C2FE4DD00A94332 /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		2C5D01D72C2FE4DD00A94332 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		2C5D01D92C2FE4DD00A94332 /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		2C5D01DB2C2FE4DD00A94332 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		2C5D01DD2C2FE4DD00A94332 /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		2C5D01DF2C2FE4DD00A94332 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		2C5D01E12C2FE4DD00A94332 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		2C5D01E32C2FE4DD00A94332 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		2C5D01E52C2FE4DD00A94332 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		2C5D01E72C2FE4DD00A94332 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		2C5D01E92C2FE4DD00A94332 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		2C5D01EB2C2FE4DD00A94332 /* FirebaseVertexAI-Preview */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseVertexAI-Preview";
+		};
+		2C5D01ED2C2FE73700A94332 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C5D017A2C2FD68C00A94332 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C270BC42C1D7E4600B6916B /* Project object */;
 }

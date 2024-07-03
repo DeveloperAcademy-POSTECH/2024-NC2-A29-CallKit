@@ -29,6 +29,7 @@ struct OnboardingFourthView: View {
             Spacer()
             
             Button {
+                UserDefaults.standard.setValue(false, forKey: UserDefaults.isEnabled)
                 self.isPresented = false
             } label: {
                 ZStack {
@@ -46,7 +47,3 @@ struct OnboardingFourthView: View {
         }
     }
 }
-
-//#Preview {
-//    OnboardingFourthView()
-//}
