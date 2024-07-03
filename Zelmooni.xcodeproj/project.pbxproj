@@ -24,6 +24,7 @@
 		2C47F7662C22EFFF00CC1C15 /* 이젤3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C47F7622C22EFFF00CC1C15 /* 이젤3.m4a */; };
 		2C47F7682C22F7C300CC1C15 /* 무니선택완료.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C47F7672C22F7C300CC1C15 /* 무니선택완료.m4a */; };
 		2C47F76A2C22F7CB00CC1C15 /* 이젤선택완료.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C47F7692C22F7CB00CC1C15 /* 이젤선택완료.m4a */; };
+		2C5D01F22C35623800A94332 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2C5D01F12C35623800A94332 /* .gitignore */; };
 		2C630CDE2C2402A8005D3F95 /* 규니2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C630CDB2C2402A8005D3F95 /* 규니2.m4a */; };
 		2C630CDF2C2402A8005D3F95 /* 규니3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C630CDC2C2402A8005D3F95 /* 규니3.m4a */; };
 		2C630CE02C2402A8005D3F95 /* 규니1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C630CDD2C2402A8005D3F95 /* 규니1.m4a */; };
@@ -79,6 +80,7 @@
 		2C47F7622C22EFFF00CC1C15 /* 이젤3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "이젤3.m4a"; sourceTree = "<group>"; };
 		2C47F7672C22F7C300CC1C15 /* 무니선택완료.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "무니선택완료.m4a"; sourceTree = "<group>"; };
 		2C47F7692C22F7CB00CC1C15 /* 이젤선택완료.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "이젤선택완료.m4a"; sourceTree = "<group>"; };
+		2C5D01F12C35623800A94332 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2C630CDB2C2402A8005D3F95 /* 규니2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "규니2.m4a"; sourceTree = "<group>"; };
 		2C630CDC2C2402A8005D3F95 /* 규니3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "규니3.m4a"; sourceTree = "<group>"; };
 		2C630CDD2C2402A8005D3F95 /* 규니1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "규니1.m4a"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		2C270BC32C1D7E4600B6916B = {
 			isa = PBXGroup;
 			children = (
+				2C5D01F12C35623800A94332 /* .gitignore */,
 				2C270BCE2C1D7E4600B6916B /* Zelmooni */,
 				2C270BCD2C1D7E4600B6916B /* Products */,
 			);
@@ -386,6 +389,7 @@
 				2C270BD72C1D7E4700B6916B /* Preview Assets.xcassets in Resources */,
 				2CAB7E692C2001A70079C8FE /* NeoR.ttf in Resources */,
 				2C47F7682C22F7C300CC1C15 /* 무니선택완료.m4a in Resources */,
+				2C5D01F22C35623800A94332 /* .gitignore in Resources */,
 				2C270BD42C1D7E4700B6916B /* Assets.xcassets in Resources */,
 				2C47F75B2C22EFE700CC1C15 /* 무니3.m4a in Resources */,
 				2C47F75C2C22EFE700CC1C15 /* 무니2.m4a in Resources */,
