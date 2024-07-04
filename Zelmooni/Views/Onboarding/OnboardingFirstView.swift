@@ -22,14 +22,11 @@ struct OnboardingFirstView: View {
             Spacer()
             
             VStack(spacing: 0) {
-               
                 HStack {
                     Image(.mainView)
                         .resizable()
                         .frame(width: 270, height: 270)
-               
                 }
-                
             }
             
             Spacer()
@@ -53,8 +50,3 @@ struct OnboardingFirstView: View {
         .padding(.top, 71)
     }
 }
-
-
-//#Preview {
-//    OnboardingFirstView()
-//}

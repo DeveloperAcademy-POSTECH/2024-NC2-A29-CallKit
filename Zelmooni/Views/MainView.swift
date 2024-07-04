@@ -10,8 +10,17 @@ import SwiftUI
 struct MainView: View {
     @State private var viewModel = CallViewModel.shared
     @State private var path: [NavigationStatus] = []
+    @State private var isEnabled: Bool = UserDefaults.standard.bool(forKey: UserDefaults.isEnabled)
     
     var body: some View {
+        if !viewModel.isCallComing {
+            main
+        } else {
+            CallMainView(isTest: viewModel.isTest)
+        }
+    }
+    
+    var main: some View {
         NavigationStack(path: $path) {
             VStack {
                 VStack(spacing: 5) {
@@ -31,9 +40,9 @@ struct MainView: View {
                             .frame(width: 162, height: 162)
                     }
                 }
-
+                
                 Button {
-//                    viewModel.isTest = true
+                    viewModel.isTest = true
                     viewModel.getTestCall()
                 } label: {
                     ZStack {
@@ -74,9 +83,13 @@ struct MainView: View {
                 .padding(.horizontal, 48)
                 .tint(.black)
                 
-            }
-            .fullScreenCover(isPresented: $viewModel.isCallComing) {
-                CallMainView(isTest: viewModel.isTest)
+                HStack {
+                    Text("모닝콜 시작")
+                        .font(.custom(FontName.neoSB, size: 20))
+                    
+                    Toggle(isOn: $isEnabled) { }
+                }
+                .padding(.horizontal, 48)
             }
             .navigationDestination(for: NavigationStatus.self) { status in
                 if status == .modify {
@@ -86,17 +99,15 @@ struct MainView: View {
                         .navigationBarBackButtonHidden()
                 }
             }
+            .onChange(of: self.isEnabled) { (oldValue, newValue) in
+                UserDefaults.standard.setValue(newValue, forKey: UserDefaults.isEnabled)
+                
+                Task.init {
+                    await DBController().updateData(newValue)
+                }
+            }
         }
         .tint(.main)
     }
 
-}
-
-#Preview {
-    MainView()
-}
-
-enum NavigationStatus {
-   case modify
-   case complete
 }
