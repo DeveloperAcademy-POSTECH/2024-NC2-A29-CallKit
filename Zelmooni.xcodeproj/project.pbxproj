@@ -30,6 +30,13 @@
 		2C630CE32C2402B2005D3F95 /* 규니선택.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C630CE12C2402B2005D3F95 /* 규니선택.m4a */; };
 		2C630CE42C2402B2005D3F95 /* 규니선택완료.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2C630CE22C2402B2005D3F95 /* 규니선택완료.m4a */; };
 		2C630CE72C252F87005D3F95 /* ModifyVoiceCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C630CE62C252F87005D3F95 /* ModifyVoiceCompleteView.swift */; };
+		2C896BE12C3645D900B138A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C896BE02C3645D900B138A3 /* GoogleService-Info.plist */; };
+		2C896BE42C36463D00B138A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C896BE32C36463D00B138A3 /* AppDelegate.swift */; };
+		2C896BE62C36465700B138A3 /* DBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C896BE52C36465700B138A3 /* DBController.swift */; };
+		2C896BE82C36467C00B138A3 /* NavigationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C896BE72C36467C00B138A3 /* NavigationStatus.swift */; };
+		2C896BED2C3647FC00B138A3 /* 재촉.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C896BEA2C3647FC00B138A3 /* 재촉.jpg */; };
+		2C896BEE2C3647FC00B138A3 /* 오늘기록.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C896BEB2C3647FC00B138A3 /* 오늘기록.jpg */; };
+		2C896BEF2C3647FC00B138A3 /* 등록완료.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C896BEC2C3647FC00B138A3 /* 등록완료.jpg */; };
 		2CAB7E672C2001A70079C8FE /* NeoM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E5E2C2001A70079C8FE /* NeoM.ttf */; };
 		2CAB7E682C2001A70079C8FE /* NeoSB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E5F2C2001A70079C8FE /* NeoSB.ttf */; };
 		2CAB7E692C2001A70079C8FE /* NeoR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E602C2001A70079C8FE /* NeoR.ttf */; };
@@ -56,6 +63,7 @@
 		2CAB7E9E2C2168630079C8FE /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E9D2C2168630079C8FE /* forest.mp3 */; };
 		2CAB7EA02C2170890079C8FE /* testmusic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB7E9F2C2170890079C8FE /* testmusic.m4a */; };
 		2CAB7EA62C2172A10079C8FE /* empty1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB7EA52C2172A10079C8FE /* empty1.swift */; };
+		7A76223642647A0FE0D0BF50 /* Pods_Zelmooni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DC89E6BAB64018E93AB5E2 /* Pods_Zelmooni.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +93,13 @@
 		2C630CE12C2402B2005D3F95 /* 규니선택.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "규니선택.m4a"; sourceTree = "<group>"; };
 		2C630CE22C2402B2005D3F95 /* 규니선택완료.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "규니선택완료.m4a"; sourceTree = "<group>"; };
 		2C630CE62C252F87005D3F95 /* ModifyVoiceCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyVoiceCompleteView.swift; sourceTree = "<group>"; };
+		2C896BE02C3645D900B138A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C896BE32C36463D00B138A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C896BE52C36465700B138A3 /* DBController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBController.swift; sourceTree = "<group>"; };
+		2C896BE72C36467C00B138A3 /* NavigationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStatus.swift; sourceTree = "<group>"; };
+		2C896BEA2C3647FC00B138A3 /* 재촉.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "재촉.jpg"; sourceTree = "<group>"; };
+		2C896BEB2C3647FC00B138A3 /* 오늘기록.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "오늘기록.jpg"; sourceTree = "<group>"; };
+		2C896BEC2C3647FC00B138A3 /* 등록완료.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "등록완료.jpg"; sourceTree = "<group>"; };
 		2CAB7E5E2C2001A70079C8FE /* NeoM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoM.ttf; sourceTree = "<group>"; };
 		2CAB7E5F2C2001A70079C8FE /* NeoSB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoSB.ttf; sourceTree = "<group>"; };
 		2CAB7E602C2001A70079C8FE /* NeoR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeoR.ttf; sourceTree = "<group>"; };
@@ -111,6 +126,9 @@
 		2CAB7E9D2C2168630079C8FE /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forest.mp3; sourceTree = "<group>"; };
 		2CAB7E9F2C2170890079C8FE /* testmusic.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = testmusic.m4a; sourceTree = "<group>"; };
 		2CAB7EA52C2172A10079C8FE /* empty1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty1.swift; sourceTree = "<group>"; };
+		4EA2593270AAF7F252A5A323 /* Pods-Zelmooni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zelmooni.debug.xcconfig"; path = "Target Support Files/Pods-Zelmooni/Pods-Zelmooni.debug.xcconfig"; sourceTree = "<group>"; };
+		B4DC89E6BAB64018E93AB5E2 /* Pods_Zelmooni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zelmooni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76599B08400440497819825 /* Pods-Zelmooni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zelmooni.release.xcconfig"; path = "Target Support Files/Pods-Zelmooni/Pods-Zelmooni.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,17 +136,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A76223642647A0FE0D0BF50 /* Pods_Zelmooni.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11DF41F62BBE67D3F45AF57A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4DC89E6BAB64018E93AB5E2 /* Pods_Zelmooni.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2C270BC32C1D7E4600B6916B = {
 			isa = PBXGroup;
 			children = (
 				2C270BCE2C1D7E4600B6916B /* Zelmooni */,
 				2C270BCD2C1D7E4600B6916B /* Products */,
+				3095A4EC6FE7D75FE68DAA87 /* Pods */,
+				11DF41F62BBE67D3F45AF57A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +172,7 @@
 		2C270BCE2C1D7E4600B6916B /* Zelmooni */ = {
 			isa = PBXGroup;
 			children = (
+				2C896BE02C3645D900B138A3 /* GoogleService-Info.plist */,
 				2CAB7E762C20114E0079C8FE /* Helpers */,
 				2CAB7E702C2006A30079C8FE /* Views */,
 				2C270BE02C1D888900B6916B /* Zelmooni.entitlements */,
@@ -191,9 +221,29 @@
 			path = Modify;
 			sourceTree = "<group>";
 		};
+		2C896BE22C3645ED00B138A3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2CAB7E832C2043750079C8FE /* UserDefaults + Extension.swift */,
+				2CAB7E7B2C2011A00079C8FE /* View + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C896BE92C3647E000B138A3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2C896BEC2C3647FC00B138A3 /* 등록완료.jpg */,
+				2C896BEB2C3647FC00B138A3 /* 오늘기록.jpg */,
+				2C896BEA2C3647FC00B138A3 /* 재촉.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		2CAB7E5D2C20019A0079C8FE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2C896BE92C3647E000B138A3 /* Images */,
 				2CAB7EA12C2172780079C8FE /* Sound */,
 				2CAB7E8B2C2061B60079C8FE /* Fonts */,
 			);
@@ -227,13 +277,15 @@
 		2CAB7E762C20114E0079C8FE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2C896BE22C3645ED00B138A3 /* Extensions */,
 				2CAB7E952C210CE40079C8FE /* ViewModels */,
 				2CAB7E772C20115B0079C8FE /* FontName.swift */,
 				2CAB7E792C2011840079C8FE /* TextViewModifier.swift */,
-				2CAB7E7B2C2011A00079C8FE /* View + Extension.swift */,
-				2CAB7E832C2043750079C8FE /* UserDefaults + Extension.swift */,
 				2CAB7E9B2C2150D50079C8FE /* AudioController.swift */,
 				2C47F7552C22B59400CC1C15 /* STTController.swift */,
+				2C896BE32C36463D00B138A3 /* AppDelegate.swift */,
+				2C896BE52C36465700B138A3 /* DBController.swift */,
+				2C896BE72C36467C00B138A3 /* NavigationStatus.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -318,6 +370,15 @@
 			path = Gyuni;
 			sourceTree = "<group>";
 		};
+		3095A4EC6FE7D75FE68DAA87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EA2593270AAF7F252A5A323 /* Pods-Zelmooni.debug.xcconfig */,
+				E76599B08400440497819825 /* Pods-Zelmooni.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,9 +386,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C270BDA2C1D7E4700B6916B /* Build configuration list for PBXNativeTarget "Zelmooni" */;
 			buildPhases = (
+				8795225A75F3C4282C29AB0E /* [CP] Check Pods Manifest.lock */,
 				2C270BC82C1D7E4600B6916B /* Sources */,
 				2C270BC92C1D7E4600B6916B /* Frameworks */,
 				2C270BCA2C1D7E4600B6916B /* Resources */,
+				FFBC3B6B144D4B8EB2C71EA1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,7 +439,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C896BEE2C3647FC00B138A3 /* 오늘기록.jpg in Resources */,
 				2CAB7EA02C2170890079C8FE /* testmusic.m4a in Resources */,
+				2C896BED2C3647FC00B138A3 /* 재촉.jpg in Resources */,
 				2C630CE42C2402B2005D3F95 /* 규니선택완료.m4a in Resources */,
 				2CAB7E682C2001A70079C8FE /* NeoSB.ttf in Resources */,
 				2CAB7E6E2C2001A70079C8FE /* NeoL.ttf in Resources */,
@@ -393,6 +458,7 @@
 				2C47F75E2C22EFF400CC1C15 /* 무니선택.m4a in Resources */,
 				2CAB7E6C2C2001A70079C8FE /* NeoB.ttf in Resources */,
 				2C47F7642C22EFFF00CC1C15 /* 이젤1.m4a in Resources */,
+				2C896BE12C3645D900B138A3 /* GoogleService-Info.plist in Resources */,
 				2C630CDE2C2402A8005D3F95 /* 규니2.m4a in Resources */,
 				2C47F7662C22EFFF00CC1C15 /* 이젤3.m4a in Resources */,
 				2C630CE32C2402B2005D3F95 /* 규니선택.m4a in Resources */,
@@ -403,12 +469,55 @@
 				2CAB7E6A2C2001A70079C8FE /* NeoUL.ttf in Resources */,
 				2C47F7632C22EFFF00CC1C15 /* 이젤2.m4a in Resources */,
 				2C47F75A2C22EFE700CC1C15 /* 무니1.m4a in Resources */,
+				2C896BEF2C3647FC00B138A3 /* 등록완료.jpg in Resources */,
 				2CAB7E9E2C2168630079C8FE /* forest.mp3 in Resources */,
 				2C630CE02C2402A8005D3F95 /* 규니1.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8795225A75F3C4282C29AB0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zelmooni-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFBC3B6B144D4B8EB2C71EA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zelmooni/Pods-Zelmooni-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zelmooni/Pods-Zelmooni-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zelmooni/Pods-Zelmooni-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C270BC82C1D7E4600B6916B /* Sources */ = {
@@ -424,6 +533,7 @@
 				2CAB7E8A2C204C870079C8FE /* ModifyVoiceView.swift in Sources */,
 				2C47F7562C22B59400CC1C15 /* STTController.swift in Sources */,
 				2CAB7E782C20115B0079C8FE /* FontName.swift in Sources */,
+				2C896BE62C36465700B138A3 /* DBController.swift in Sources */,
 				2CAB7E942C2073450079C8FE /* OnboardingFourthView.swift in Sources */,
 				2CAB7E752C2011280079C8FE /* OnboardingFirstView.swift in Sources */,
 				2CAB7E972C210CF50079C8FE /* CallViewModel.swift in Sources */,
@@ -433,7 +543,9 @@
 				2CAB7E7C2C2011A00079C8FE /* View + Extension.swift in Sources */,
 				2CAB7E9C2C2150D50079C8FE /* AudioController.swift in Sources */,
 				2C47F7352C21C61A00CC1C15 /* TodayListMainView.swift in Sources */,
+				2C896BE42C36463D00B138A3 /* AppDelegate.swift in Sources */,
 				2C270BD02C1D7E4600B6916B /* ZelmooniApp.swift in Sources */,
+				2C896BE82C36467C00B138A3 /* NavigationStatus.swift in Sources */,
 				2CAB7EA62C2172A10079C8FE /* empty1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,6 +674,7 @@
 		};
 		2C270BDB2C1D7E4700B6916B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EA2593270AAF7F252A5A323 /* Pods-Zelmooni.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -571,12 +684,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Zelmooni/Preview Content\"";
 				DEVELOPMENT_TEAM = VF8R3A969C;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Zelmooni/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "미라콜";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "앱에서 마이크를 사용하여 음성 인식을 처리합니다.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "앱에서 마이크를 사용하여 음성 인식을 처리합니다.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "앱에서 마이크를 사용하여 음성 인식을 처리하기 위해 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -597,6 +711,7 @@
 		};
 		2C270BDC2C1D7E4700B6916B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76599B08400440497819825 /* Pods-Zelmooni.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -606,12 +721,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Zelmooni/Preview Content\"";
 				DEVELOPMENT_TEAM = VF8R3A969C;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Zelmooni/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "미라콜";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "앱에서 마이크를 사용하여 음성 인식을 처리합니다.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "앱에서 마이크를 사용하여 음성 인식을 처리합니다.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "앱에서 마이크를 사용하여 음성 인식을 처리하기 위해 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

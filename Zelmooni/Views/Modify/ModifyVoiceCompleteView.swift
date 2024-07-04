@@ -47,7 +47,3 @@ struct ModifyVoiceCompleteView: View {
         }
     }
 }
-
-//#Preview {
-//    OnboardingFourthView()
-//}
